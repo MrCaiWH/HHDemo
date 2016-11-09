@@ -20,10 +20,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    HHMainVC *mainVC = [[HHMainVC alloc] init];
-    HHMainNavVC *navVC = [[HHMainNavVC alloc] initWithRootViewController:mainVC];
-    
-    
     // 1.创建window
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
@@ -31,6 +27,8 @@
     [self.window makeKeyAndVisible];
     
     // 3.显示默认界面
+    HHMainVC *mainVC = [[HHMainVC alloc] init];
+    HHMainNavVC *navVC = [[HHMainNavVC alloc] initWithRootViewController:mainVC];
     self.window.rootViewController = navVC;
 
     return YES;
