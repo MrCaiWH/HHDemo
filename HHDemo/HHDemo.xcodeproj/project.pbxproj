@@ -12,6 +12,8 @@
 		4F2192391DD36E1900D2ABFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F2192381DD36E1900D2ABFC /* AppDelegate.m */; };
 		4F21923C1DD36E6900D2ABFC /* HHMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F21923B1DD36E6900D2ABFC /* HHMainVC.m */; };
 		4F21923F1DD36EA300D2ABFC /* HHMainNavVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F21923E1DD36EA300D2ABFC /* HHMainNavVC.m */; };
+		4F63680A1DD604DA0018BA48 /* ZOItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F6368091DD604DA0018BA48 /* ZOItem.m */; };
+		4F63680F1DD607580018BA48 /* ZOEncodedVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F63680E1DD607580018BA48 /* ZOEncodedVC.m */; };
 		55F42448C85BA7EE22084B11 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD2550106A11DAF0FB7218C7 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +30,10 @@
 		4F21923D1DD36EA300D2ABFC /* HHMainNavVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHMainNavVC.h; sourceTree = "<group>"; };
 		4F21923E1DD36EA300D2ABFC /* HHMainNavVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHMainNavVC.m; sourceTree = "<group>"; };
 		4F2192411DD37E0700D2ABFC /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		4F6368081DD604DA0018BA48 /* ZOItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZOItem.h; sourceTree = "<group>"; };
+		4F6368091DD604DA0018BA48 /* ZOItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZOItem.m; sourceTree = "<group>"; };
+		4F63680D1DD607580018BA48 /* ZOEncodedVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZOEncodedVC.h; sourceTree = "<group>"; };
+		4F63680E1DD607580018BA48 /* ZOEncodedVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZOEncodedVC.m; sourceTree = "<group>"; };
 		5CA836094514139FC88AE97E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		BD2550106A11DAF0FB7218C7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -87,6 +93,7 @@
 			children = (
 				4F2192371DD36E1900D2ABFC /* AppDelegate.h */,
 				4F2192381DD36E1900D2ABFC /* AppDelegate.m */,
+				4F63680B1DD607330018BA48 /* Encoded */,
 				4F2192321DD36DC000D2ABFC /* Main */,
 			);
 			path = Classes;
@@ -95,6 +102,7 @@
 		4F2192321DD36DC000D2ABFC /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				4F6368071DD604C10018BA48 /* Model */,
 				4F2192331DD36DC000D2ABFC /* Controller */,
 			);
 			path = Main;
@@ -107,6 +115,32 @@
 				4F21923B1DD36E6900D2ABFC /* HHMainVC.m */,
 				4F21923D1DD36EA300D2ABFC /* HHMainNavVC.h */,
 				4F21923E1DD36EA300D2ABFC /* HHMainNavVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4F6368071DD604C10018BA48 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4F6368081DD604DA0018BA48 /* ZOItem.h */,
+				4F6368091DD604DA0018BA48 /* ZOItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4F63680B1DD607330018BA48 /* Encoded */ = {
+			isa = PBXGroup;
+			children = (
+				4F63680C1DD607330018BA48 /* Controller */,
+			);
+			path = Encoded;
+			sourceTree = "<group>";
+		};
+		4F63680C1DD607330018BA48 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4F63680D1DD607580018BA48 /* ZOEncodedVC.h */,
+				4F63680E1DD607580018BA48 /* ZOEncodedVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -248,10 +282,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F63680F1DD607580018BA48 /* ZOEncodedVC.m in Sources */,
 				4F2192391DD36E1900D2ABFC /* AppDelegate.m in Sources */,
 				4F21923C1DD36E6900D2ABFC /* HHMainVC.m in Sources */,
 				4F21921C1DD36CD000D2ABFC /* main.m in Sources */,
 				4F21923F1DD36EA300D2ABFC /* HHMainNavVC.m in Sources */,
+				4F63680A1DD604DA0018BA48 /* ZOItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

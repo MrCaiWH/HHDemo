@@ -7,11 +7,16 @@
 //
 
 #import "HHMainVC.h"
+#import "ZOItem.h"
+#import "ZOEncodedVC.h"
 
 static NSString *const cellIdentifier =@"cellIdentifier";
 
 @interface HHMainVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
+
+@property (nonatomic, strong) NSMutableArray *dataArray;
+
 @end
 
 @implementation HHMainVC
@@ -26,17 +31,38 @@ static NSString *const cellIdentifier =@"cellIdentifier";
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.bottom.left.right.equalTo(self.view);
     }];
+    
+    self.tableView.tableFooterView = [[UIView alloc] init];
+ 
+    ZOItem *item1 = [[ZOItem alloc] initWithTitle:@"编码" targetVc:[ZOEncodedVC class]];
+    [self.dataArray addObject:item1];
 }
 
 #pragma mark - 数据源方法
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
+    return self.dataArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
-    cell.textLabel.text = [NSString stringWithFormat:@"%ld",(long)indexPath.row];
+    ZOItem *item = self.dataArray[indexPath.row];
+    cell.textLabel.text = item.title;
     return cell;
+}
+    
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    // 1. 获取当前被选中的单元格的模型对象
+    ZOItem *item = self.dataArray[indexPath.row];
+  
+    Class targetVc = item.targetVc;
+    
+    // 创建target的对象
+    UIViewController *vc = [[targetVc alloc] init];
+    if (vc != nil) {
+        // 执行跳转
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 - (UITableView *)tableView {
@@ -47,5 +73,12 @@ static NSString *const cellIdentifier =@"cellIdentifier";
         [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellIdentifier];
     }
     return _tableView;
+}
+
+- (NSMutableArray *)dataArray {
+    if (_dataArray == nil) {
+        _dataArray = [NSMutableArray array];
+    }
+    return _dataArray;
 }
 @end
