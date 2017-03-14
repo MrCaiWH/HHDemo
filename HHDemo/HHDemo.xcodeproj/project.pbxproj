@@ -14,7 +14,10 @@
 		4F21923F1DD36EA300D2ABFC /* HHMainNavVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F21923E1DD36EA300D2ABFC /* HHMainNavVC.m */; };
 		4F25FACD1E72E5F400E80326 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F25FACC1E72E5F400E80326 /* Launch Screen.storyboard */; };
 		4F25FAD21E72E72700E80326 /* HHMVVMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F25FAD11E72E72700E80326 /* HHMVVMViewController.m */; };
-		4F54A0641E780B79001A7BF2 /* HHDownLoadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F54A0631E780B79001A7BF2 /* HHDownLoadVC.m */; };
+		4F54A0681E780DF5001A7BF2 /* HHDownLoadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F54A0661E780DF5001A7BF2 /* HHDownLoadVC.m */; };
+		4F54A0691E780DF5001A7BF2 /* HHDownLoadVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F54A0671E780DF5001A7BF2 /* HHDownLoadVC.xib */; };
+		4F54A06D1E7824D4001A7BF2 /* HHDownLoadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F54A06C1E7824D4001A7BF2 /* HHDownLoadManager.m */; };
+		4F54A0741E782AB4001A7BF2 /* NSString+HHHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F54A0731E782AB4001A7BF2 /* NSString+HHHash.m */; };
 		4F63680A1DD604DA0018BA48 /* ZOItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F6368091DD604DA0018BA48 /* ZOItem.m */; };
 		4F63680F1DD607580018BA48 /* HHEncodedVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F63680E1DD607580018BA48 /* HHEncodedVC.m */; };
 		8822510C798D6C48CBE93BF8 /* Pods_HHDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ACEB90893C35FF4D9392C91 /* Pods_HHDemo.framework */; };
@@ -37,8 +40,14 @@
 		4F25FACC1E72E5F400E80326 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		4F25FAD01E72E72700E80326 /* HHMVVMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHMVVMViewController.h; sourceTree = "<group>"; };
 		4F25FAD11E72E72700E80326 /* HHMVVMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHMVVMViewController.m; sourceTree = "<group>"; };
-		4F54A0621E780B79001A7BF2 /* HHDownLoadVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHDownLoadVC.h; sourceTree = "<group>"; };
-		4F54A0631E780B79001A7BF2 /* HHDownLoadVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHDownLoadVC.m; sourceTree = "<group>"; };
+		4F54A0651E780DF5001A7BF2 /* HHDownLoadVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHDownLoadVC.h; sourceTree = "<group>"; };
+		4F54A0661E780DF5001A7BF2 /* HHDownLoadVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHDownLoadVC.m; sourceTree = "<group>"; };
+		4F54A0671E780DF5001A7BF2 /* HHDownLoadVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HHDownLoadVC.xib; sourceTree = "<group>"; };
+		4F54A06B1E7824D4001A7BF2 /* HHDownLoadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHDownLoadManager.h; sourceTree = "<group>"; };
+		4F54A06C1E7824D4001A7BF2 /* HHDownLoadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHDownLoadManager.m; sourceTree = "<group>"; };
+		4F54A0721E782AB4001A7BF2 /* NSString+HHHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HHHash.h"; sourceTree = "<group>"; };
+		4F54A0731E782AB4001A7BF2 /* NSString+HHHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HHHash.m"; sourceTree = "<group>"; };
+		4F54A0761E7830C0001A7BF2 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 		4F6368081DD604DA0018BA48 /* ZOItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZOItem.h; sourceTree = "<group>"; };
 		4F6368091DD604DA0018BA48 /* ZOItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZOItem.m; sourceTree = "<group>"; };
 		4F63680D1DD607580018BA48 /* HHEncodedVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHEncodedVC.h; sourceTree = "<group>"; };
@@ -102,6 +111,8 @@
 			children = (
 				4F2192371DD36E1900D2ABFC /* AppDelegate.h */,
 				4F2192381DD36E1900D2ABFC /* AppDelegate.m */,
+				4F54A0751E7830B3001A7BF2 /* Config */,
+				4F54A06E1E782A69001A7BF2 /* Category */,
 				4F54A0601E780B57001A7BF2 /* BreakpointResume */,
 				4F25FACE1E72E6FB00E80326 /* MVVM */,
 				4F63680B1DD607330018BA48 /* Encoded */,
@@ -150,6 +161,7 @@
 		4F54A0601E780B57001A7BF2 /* BreakpointResume */ = {
 			isa = PBXGroup;
 			children = (
+				4F54A06A1E7824C4001A7BF2 /* Tool */,
 				4F54A0611E780B57001A7BF2 /* Controller */,
 			);
 			path = BreakpointResume;
@@ -158,10 +170,37 @@
 		4F54A0611E780B57001A7BF2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				4F54A0621E780B79001A7BF2 /* HHDownLoadVC.h */,
-				4F54A0631E780B79001A7BF2 /* HHDownLoadVC.m */,
+				4F54A0651E780DF5001A7BF2 /* HHDownLoadVC.h */,
+				4F54A0661E780DF5001A7BF2 /* HHDownLoadVC.m */,
+				4F54A0671E780DF5001A7BF2 /* HHDownLoadVC.xib */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		4F54A06A1E7824C4001A7BF2 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				4F54A06B1E7824D4001A7BF2 /* HHDownLoadManager.h */,
+				4F54A06C1E7824D4001A7BF2 /* HHDownLoadManager.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		4F54A06E1E782A69001A7BF2 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				4F54A0721E782AB4001A7BF2 /* NSString+HHHash.h */,
+				4F54A0731E782AB4001A7BF2 /* NSString+HHHash.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		4F54A0751E7830B3001A7BF2 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				4F54A0761E7830C0001A7BF2 /* Constant.h */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 		4F6368071DD604C10018BA48 /* Model */ = {
@@ -270,6 +309,7 @@
 			files = (
 				4F25FACD1E72E5F400E80326 /* Launch Screen.storyboard in Resources */,
 				4F2192271DD36CD000D2ABFC /* Assets.xcassets in Resources */,
+				4F54A0691E780DF5001A7BF2 /* HHDownLoadVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,10 +370,12 @@
 			files = (
 				4F63680F1DD607580018BA48 /* HHEncodedVC.m in Sources */,
 				4F2192391DD36E1900D2ABFC /* AppDelegate.m in Sources */,
-				4F54A0641E780B79001A7BF2 /* HHDownLoadVC.m in Sources */,
+				4F54A0681E780DF5001A7BF2 /* HHDownLoadVC.m in Sources */,
 				4F25FAD21E72E72700E80326 /* HHMVVMViewController.m in Sources */,
+				4F54A06D1E7824D4001A7BF2 /* HHDownLoadManager.m in Sources */,
 				4F21923C1DD36E6900D2ABFC /* HHMainVC.m in Sources */,
 				4F21921C1DD36CD000D2ABFC /* main.m in Sources */,
+				4F54A0741E782AB4001A7BF2 /* NSString+HHHash.m in Sources */,
 				4F21923F1DD36EA300D2ABFC /* HHMainNavVC.m in Sources */,
 				4F63680A1DD604DA0018BA48 /* ZOItem.m in Sources */,
 			);
@@ -435,6 +477,7 @@
 			baseConfigurationReference = 373FA64C8B3F2DED0D33C7C4 /* Pods-HHDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = HHDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = HHDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -449,6 +492,7 @@
 			baseConfigurationReference = 60902F94830BAEA292468BB1 /* Pods-HHDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = HHDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = HHDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
