@@ -1,24 +1,24 @@
 //
-//  ZOEncodedVC.m
+//  HHMVVMViewController.m
 //  HHDemo
 //
-//  Created by 蔡万鸿 on 2016/11/11.
-//  Copyright © 2016年 黄花菜. All rights reserved.
+//  Created by 蔡万鸿 on 2017/3/10.
+//  Copyright © 2017年 黄花菜. All rights reserved.
 //
 
-#import "ZOEncodedVC.h"
+#import "HHMVVMViewController.h"
 
-@interface ZOEncodedVC ()
+@interface HHMVVMViewController ()
 
 @end
 
-@implementation ZOEncodedVC
+@implementation HHMVVMViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.title = @"编码";
+    self.title = @"MVVM和RAC";
 }
 
 - (void)didReceiveMemoryWarning {

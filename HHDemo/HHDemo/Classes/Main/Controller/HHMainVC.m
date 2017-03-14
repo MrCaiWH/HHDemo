@@ -8,7 +8,8 @@
 
 #import "HHMainVC.h"
 #import "ZOItem.h"
-#import "ZOEncodedVC.h"
+#import "HHEncodedVC.h"
+#import "HHMVVMViewController.h"
 
 static NSString *const cellIdentifier =@"cellIdentifier";
 
@@ -34,8 +35,11 @@ static NSString *const cellIdentifier =@"cellIdentifier";
     
     self.tableView.tableFooterView = [[UIView alloc] init];
  
-    ZOItem *item1 = [[ZOItem alloc] initWithTitle:@"编码" targetVc:[ZOEncodedVC class]];
+    ZOItem *item1 = [[ZOItem alloc] initWithTitle:@"编码" targetVc:[HHEncodedVC class]];
     [self.dataArray addObject:item1];
+    
+    ZOItem *item2 = [[ZOItem alloc] initWithTitle:@"MVVM和RAC" targetVc:[HHMVVMViewController class]];
+    [self.dataArray addObject:item2];
 }
 
 #pragma mark - 数据源方法

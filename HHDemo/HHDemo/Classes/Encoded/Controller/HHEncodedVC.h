@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ZOEncodedVC : UIViewController
+@interface HHEncodedVC : UIViewController
 
 @end
