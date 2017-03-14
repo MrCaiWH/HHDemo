@@ -10,6 +10,7 @@
 #import "ZOItem.h"
 #import "HHEncodedVC.h"
 #import "HHMVVMViewController.h"
+#import "HHDownLoadVC.h"
 
 static NSString *const cellIdentifier =@"cellIdentifier";
 
@@ -40,6 +41,9 @@ static NSString *const cellIdentifier =@"cellIdentifier";
     
     ZOItem *item2 = [[ZOItem alloc] initWithTitle:@"MVVM和RAC" targetVc:[HHMVVMViewController class]];
     [self.dataArray addObject:item2];
+    
+    ZOItem *item3 = [[ZOItem alloc] initWithTitle:@"断点续传" targetVc:[HHDownLoadVC class]];
+    [self.dataArray addObject:item3];
 }
 
 #pragma mark - 数据源方法

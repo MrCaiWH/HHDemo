@@ -14,6 +14,7 @@
 		4F21923F1DD36EA300D2ABFC /* HHMainNavVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F21923E1DD36EA300D2ABFC /* HHMainNavVC.m */; };
 		4F25FACD1E72E5F400E80326 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F25FACC1E72E5F400E80326 /* Launch Screen.storyboard */; };
 		4F25FAD21E72E72700E80326 /* HHMVVMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F25FAD11E72E72700E80326 /* HHMVVMViewController.m */; };
+		4F54A0641E780B79001A7BF2 /* HHDownLoadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F54A0631E780B79001A7BF2 /* HHDownLoadVC.m */; };
 		4F63680A1DD604DA0018BA48 /* ZOItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F6368091DD604DA0018BA48 /* ZOItem.m */; };
 		4F63680F1DD607580018BA48 /* HHEncodedVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F63680E1DD607580018BA48 /* HHEncodedVC.m */; };
 		8822510C798D6C48CBE93BF8 /* Pods_HHDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ACEB90893C35FF4D9392C91 /* Pods_HHDemo.framework */; };
@@ -36,6 +37,8 @@
 		4F25FACC1E72E5F400E80326 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		4F25FAD01E72E72700E80326 /* HHMVVMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHMVVMViewController.h; sourceTree = "<group>"; };
 		4F25FAD11E72E72700E80326 /* HHMVVMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHMVVMViewController.m; sourceTree = "<group>"; };
+		4F54A0621E780B79001A7BF2 /* HHDownLoadVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHDownLoadVC.h; sourceTree = "<group>"; };
+		4F54A0631E780B79001A7BF2 /* HHDownLoadVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHDownLoadVC.m; sourceTree = "<group>"; };
 		4F6368081DD604DA0018BA48 /* ZOItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZOItem.h; sourceTree = "<group>"; };
 		4F6368091DD604DA0018BA48 /* ZOItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZOItem.m; sourceTree = "<group>"; };
 		4F63680D1DD607580018BA48 /* HHEncodedVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHEncodedVC.h; sourceTree = "<group>"; };
@@ -99,6 +102,7 @@
 			children = (
 				4F2192371DD36E1900D2ABFC /* AppDelegate.h */,
 				4F2192381DD36E1900D2ABFC /* AppDelegate.m */,
+				4F54A0601E780B57001A7BF2 /* BreakpointResume */,
 				4F25FACE1E72E6FB00E80326 /* MVVM */,
 				4F63680B1DD607330018BA48 /* Encoded */,
 				4F2192321DD36DC000D2ABFC /* Main */,
@@ -139,6 +143,23 @@
 			children = (
 				4F25FAD01E72E72700E80326 /* HHMVVMViewController.h */,
 				4F25FAD11E72E72700E80326 /* HHMVVMViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4F54A0601E780B57001A7BF2 /* BreakpointResume */ = {
+			isa = PBXGroup;
+			children = (
+				4F54A0611E780B57001A7BF2 /* Controller */,
+			);
+			path = BreakpointResume;
+			sourceTree = "<group>";
+		};
+		4F54A0611E780B57001A7BF2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4F54A0621E780B79001A7BF2 /* HHDownLoadVC.h */,
+				4F54A0631E780B79001A7BF2 /* HHDownLoadVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -309,6 +330,7 @@
 			files = (
 				4F63680F1DD607580018BA48 /* HHEncodedVC.m in Sources */,
 				4F2192391DD36E1900D2ABFC /* AppDelegate.m in Sources */,
+				4F54A0641E780B79001A7BF2 /* HHDownLoadVC.m in Sources */,
 				4F25FAD21E72E72700E80326 /* HHMVVMViewController.m in Sources */,
 				4F21923C1DD36E6900D2ABFC /* HHMainVC.m in Sources */,
 				4F21921C1DD36CD000D2ABFC /* main.m in Sources */,
