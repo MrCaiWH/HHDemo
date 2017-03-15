@@ -27,6 +27,9 @@
 //    POPDecayAnimation   //减速动画
 //    POPCustomAnimation //自定义动画
     
+//    Pop Animation应用于CALayer时，在动画运行的任何时刻，layer和其presentationLayer的相关属性值始终保持一致，而Core Animation做不到。
+//    Pop Animation可以应用任何NSObject的对象，而Core Aniamtion必须是CALayer。
+    
     self.title = @"动画";
     [self.view addSubview:self.contentView];
 }
