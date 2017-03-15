@@ -20,6 +20,7 @@
 		4F65D3491E795C7C002C4555 /* HHLanguageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F65D3471E795C7C002C4555 /* HHLanguageVC.m */; };
 		4F65D34A1E795C7C002C4555 /* HHLanguageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F65D3481E795C7C002C4555 /* HHLanguageVC.xib */; };
 		4F65D34D1E797539002C4555 /* UIColor+HHExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F65D34C1E797539002C4555 /* UIColor+HHExtend.m */; };
+		4F65D3501E797745002C4555 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F65D3521E797745002C4555 /* Localizable.strings */; };
 		8822510C798D6C48CBE93BF8 /* Pods_HHDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ACEB90893C35FF4D9392C91 /* Pods_HHDemo.framework */; };
 		DA0FEAC11E79195D00E542B3 /* HHVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0FEAC01E79195D00E542B3 /* HHVC.m */; };
 		DA0FEADA1E79319300E542B3 /* HHAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0FEAC91E79319300E542B3 /* HHAnimationVC.m */; };
@@ -64,6 +65,13 @@
 		4F65D3481E795C7C002C4555 /* HHLanguageVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HHLanguageVC.xib; sourceTree = "<group>"; };
 		4F65D34B1E797539002C4555 /* UIColor+HHExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HHExtend.h"; sourceTree = "<group>"; };
 		4F65D34C1E797539002C4555 /* UIColor+HHExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HHExtend.m"; sourceTree = "<group>"; };
+		4F65D3511E797745002C4555 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4F65D3531E79774F002C4555 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		4F65D3541E79776E002C4555 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4F65D3551E797772002C4555 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4F65D3561E797782002C4555 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4F65D3571E79779F002C4555 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		4F65D3581E7977B4002C4555 /* zh-Hant-TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant-TW"; path = "zh-Hant-TW.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		60902F94830BAEA292468BB1 /* Pods-HHDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HHDemo/Pods-HHDemo.release.xcconfig"; sourceTree = "<group>"; };
 		DA0FEABF1E79195D00E542B3 /* HHVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHVC.h; sourceTree = "<group>"; };
 		DA0FEAC01E79195D00E542B3 /* HHVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHVC.m; sourceTree = "<group>"; };
@@ -137,6 +145,7 @@
 				4F21922B1DD36CD000D2ABFC /* Info.plist */,
 				4F21921B1DD36CD000D2ABFC /* main.m */,
 				4F25FACC1E72E5F400E80326 /* Launch Screen.storyboard */,
+				4F65D3521E797745002C4555 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -398,6 +407,12 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
+				fr,
+				ja,
+				ko,
+				"zh-Hant",
+				"zh-Hant-TW",
 			);
 			mainGroup = 4F21920E1DD36CCF00D2ABFC;
 			productRefGroup = 4F2192181DD36CD000D2ABFC /* Products */;
@@ -414,6 +429,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F65D3501E797745002C4555 /* Localizable.strings in Resources */,
 				4F25FACD1E72E5F400E80326 /* Launch Screen.storyboard in Resources */,
 				4F2192271DD36CD000D2ABFC /* Assets.xcassets in Resources */,
 				4F65D34A1E795C7C002C4555 /* HHLanguageVC.xib in Resources */,
@@ -502,11 +518,29 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		4F65D3521E797745002C4555 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F65D3511E797745002C4555 /* en */,
+				4F65D3531E79774F002C4555 /* zh-Hans */,
+				4F65D3541E79776E002C4555 /* fr */,
+				4F65D3551E797772002C4555 /* ja */,
+				4F65D3561E797782002C4555 /* ko */,
+				4F65D3571E79779F002C4555 /* zh-Hant */,
+				4F65D3581E7977B4002C4555 /* zh-Hant-TW */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		4F21922C1DD36CD000D2ABFC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -555,6 +589,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
