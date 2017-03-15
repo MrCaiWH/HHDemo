@@ -11,6 +11,8 @@
 #import "HHEncodedVC.h"
 #import "HHMVVMViewController.h"
 #import "HHDownLoadVC.h"
+#import "HHAnimationVC.h"
+#import "UITableView+HHExtension.h"
 
 static NSString *const cellIdentifier =@"cellIdentifier";
 
@@ -34,7 +36,7 @@ static NSString *const cellIdentifier =@"cellIdentifier";
         make.top.bottom.left.right.equalTo(self.view);
     }];
     
-    self.tableView.tableFooterView = [[UIView alloc] init];
+    [self.tableView hiddenExtraCellLine];
  
     ZOItem *item1 = [[ZOItem alloc] initWithTitle:@"编码" targetVc:[HHEncodedVC class]];
     [self.dataArray addObject:item1];
@@ -44,6 +46,9 @@ static NSString *const cellIdentifier =@"cellIdentifier";
     
     ZOItem *item3 = [[ZOItem alloc] initWithTitle:@"断点续传" targetVc:[HHDownLoadVC class]];
     [self.dataArray addObject:item3];
+    
+    ZOItem *item4 = [[ZOItem alloc] initWithTitle:@"动画" targetVc:[HHAnimationVC class]];
+    [self.dataArray addObject:item4];
 }
 
 #pragma mark - 数据源方法
