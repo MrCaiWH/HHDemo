@@ -26,7 +26,7 @@ NSString * const language = @"language";
     
     [self tableView];
     self.tableView.rowHeight = 57.f;
-//    self.tableView.separatorColor = [UIColor hexChangeFloat:Ce5e5e5];
+    self.tableView.separatorColor = [UIColor hexChangeFloat:@"e5e5e5"];
     self.tableView.contentInset = UIEdgeInsetsMake(-57.f, 0, 0, 0);
 }
 
