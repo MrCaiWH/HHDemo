@@ -10,6 +10,8 @@
 
 /** APP语言环境 */
 UIKIT_EXTERN NSString * const language;
+/** 切换APP语言通知 */
+UIKIT_EXTERN NSString * const HHSwitchAPPLanguageNotification;
 
 /** APP语言类型 */
 typedef NS_ENUM(NSUInteger, HHLanguageType) {

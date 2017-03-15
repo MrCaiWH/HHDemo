@@ -14,7 +14,7 @@
 @end
 
 @implementation HHAnimationVC
-
+#pragma mark - View Lifecycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -47,6 +47,7 @@
     [self.contentView.layer pop_addAnimation:scaleAnimation forKey:@"scaleAnimation"];
 }
 
+#pragma mark - Lazy
 - (UIView *)contentView {
     if (_contentView == nil) {
         _contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];

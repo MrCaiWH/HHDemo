@@ -16,7 +16,7 @@
 @end
 
 @implementation HHLanguageVC
-
+#pragma mark - View Lifecycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"多语言环境";
@@ -51,6 +51,17 @@
         cell.hidden = YES;
     }
     return cell;
+}
+
+#pragma mark - UITableViewDelegate
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults];
+    if ([[defaults valueForKey:language] integerValue] == indexPath.row) return;
+    [defaults setObject:@(indexPath.row) forKey:language];
+    [defaults synchronize];
+    [[NSNotificationCenter defaultCenter] postNotificationName:HHSwitchAPPLanguageNotification object:nil];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 #pragma mark - Lazy

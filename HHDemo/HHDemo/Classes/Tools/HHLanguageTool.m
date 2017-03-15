@@ -10,6 +10,8 @@
 
 /** APP语言环境 */
 NSString * const language = @"language";
+/** 切换APP语言通知 */
+NSString * const HHSwitchAPPLanguageNotification = @"HHSwitchAPPLanguageNotification";
 
 @implementation HHLanguageTool
 + (NSString *)dpLocalizedString:(NSString *)translation_key {
