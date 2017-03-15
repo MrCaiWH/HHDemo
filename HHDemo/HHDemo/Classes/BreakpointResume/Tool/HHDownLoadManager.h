@@ -13,7 +13,14 @@ typedef void (^faileBlock) (NSError *error);
 typedef void (^progressBlock) (float progress);
 
 @interface HHDownLoadManager : NSObject
+/**
+ 下载方法
 
+ @param URL 下载接口
+ @param progressBlock 下载进度
+ @param successBlock 成功回调
+ @param faileBlock 失败回调
+ */
 -(void)downLoadWithURL:(NSString *)URL
               progress:(progressBlock)progressBlock
                success:(successBlock)successBlock

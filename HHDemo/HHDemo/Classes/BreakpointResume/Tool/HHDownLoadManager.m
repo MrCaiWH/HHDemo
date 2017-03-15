@@ -26,7 +26,7 @@
 /** 写文件的流对象 */
 @property (nonatomic, strong) NSOutputStream *stream;
 /** 下载地址 */
-@property (nonatomic,strong)NSString *downLoadUrl;
+@property (nonatomic,strong) NSString *downLoadUrl;
 /** 文件的总大小 */
 @property (nonatomic, assign) NSInteger totalLength;
 
@@ -138,10 +138,7 @@ static id _instance;
      所以对于单个文件进行多次下载的情况（断点续传），计算文件的总大小，必须把服务器返回的content-length加上本地存储的已经下载的文件大小
      */
     self.totalLength = [response.allHeaderFields[@"Content-Length"] integerValue] +  DownloadLength;
-    
-    
-    NSLog(@"self.totalLength %ld",(long)self.totalLength);
-    
+
     // 把此次已经下载的文件大小存储在plist文件
     NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithContentsOfFile: TotalLengthPlist];
     if (dict == nil) dict = [NSMutableDictionary dictionary];
