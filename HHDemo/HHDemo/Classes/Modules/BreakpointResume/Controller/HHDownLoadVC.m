@@ -8,9 +8,10 @@
 
 #import "HHDownLoadVC.h"
 #import "HHDownLoadManager.h"
+#import "ASProgressPopUpView.h"
 
 @interface HHDownLoadVC ()
-@property (weak, nonatomic) IBOutlet UILabel *progressLbl;
+@property (nonatomic, strong) ASProgressPopUpView *progressView1;
 @end
 
 @implementation HHDownLoadVC
@@ -18,9 +19,9 @@
 #pragma mark - View Lifecycle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-    
-    self.title = @"断点续传";
+
+    self.title = @"断点下载";
+    [self progressView1];
 }
 
 #pragma mark - IBAcation
@@ -35,7 +36,7 @@
     [[HHDownLoadManager shareManager] downLoadWithURL:downLoadUrl progress:^(float progress) {
         @strongify(self);
         dispatch_async(dispatch_get_main_queue(), ^{
-            self.progressLbl.text = [NSString stringWithFormat:@"%f",progress];
+            [self.progressView1 setProgress:progress animated:YES];
         });
         
     } success:^(NSString *fileStorePath) {
@@ -51,6 +52,22 @@
  */
 - (IBAction)pauseClick:(UIButton *)sender {
     [[HHDownLoadManager shareManager] stopTask];
+}
+
+- (ASProgressPopUpView *)progressView1 {
+    if (_progressView1 == nil) {
+        _progressView1 = [[ASProgressPopUpView alloc] initWithFrame:CGRectMake(50, 100, 250, 2)];
+        // 设置字体
+        _progressView1.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:15.f];
+        // 设置进度条颜色
+        _progressView1.popUpViewAnimatedColors = @[[UIColor redColor],
+                                                   [UIColor orangeColor],
+                                                   [UIColor greenColor]];
+        // 显示数值百分比
+        [_progressView1 showPopUpViewAnimated:YES];
+        [self.view addSubview:_progressView1];
+    }
+    return _progressView1;
 }
 
 - (void)dealloc {

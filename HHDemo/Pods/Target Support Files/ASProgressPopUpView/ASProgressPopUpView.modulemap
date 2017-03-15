@@ -1,0 +1,6 @@
+framework module ASProgressPopUpView {
+  umbrella header "ASProgressPopUpView-umbrella.h"
+
+  export *
+  module * { export * }
+}

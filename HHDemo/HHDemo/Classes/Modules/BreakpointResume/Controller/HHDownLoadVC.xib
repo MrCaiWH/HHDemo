@@ -11,7 +11,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HHDownLoadVC">
             <connections>
-                <outlet property="progressLbl" destination="fMG-TC-00q" id="a1I-YQ-lGb"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -42,37 +41,13 @@
                         <action selector="pauseClick:" destination="-1" eventType="touchUpInside" id="3lz-lR-TCI"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMG-TC-00q">
-                    <rect key="frame" x="126" y="166" width="123" height="21"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="21" id="KA6-TQ-zQe"/>
-                        <constraint firstAttribute="width" constant="123" id="SD5-BB-ieF"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="进度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybM-sl-Anr">
-                    <rect key="frame" x="46" y="166" width="35" height="21"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="21" id="1Ue-xy-tgI"/>
-                        <constraint firstAttribute="width" constant="35" id="YQU-JC-ts1"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="fMG-TC-00q" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0mP-fg-mCm"/>
                 <constraint firstItem="cZu-U1-X2j" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Dtn-3k-gZC"/>
                 <constraint firstItem="D86-oU-yDT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="KuQ-5S-hxv"/>
-                <constraint firstItem="D86-oU-yDT" firstAttribute="top" secondItem="fMG-TC-00q" secondAttribute="bottom" constant="82" id="MzO-Qo-tFm"/>
-                <constraint firstItem="fMG-TC-00q" firstAttribute="centerY" secondItem="ybM-sl-Anr" secondAttribute="centerY" id="aCc-2k-tVC"/>
                 <constraint firstItem="cZu-U1-X2j" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="50" id="mDy-1X-VPE"/>
                 <constraint firstItem="D86-oU-yDT" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-50" id="nEA-Gj-S7V"/>
-                <constraint firstItem="fMG-TC-00q" firstAttribute="leading" secondItem="ybM-sl-Anr" secondAttribute="trailing" constant="45" id="zv5-rW-ora"/>
             </constraints>
             <point key="canvasLocation" x="24.5" y="51.5"/>
         </view>

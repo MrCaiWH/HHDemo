@@ -1,4 +1,5 @@
 PODS:
+  - ASProgressPopUpView (0.9)
   - Masonry (1.0.2)
   - MBProgressHUD (1.0.0)
   - pop (1.0.9)
@@ -11,17 +12,19 @@ PODS:
     - ReactiveCocoa/Core
 
 DEPENDENCIES:
+  - ASProgressPopUpView
   - Masonry
   - MBProgressHUD (~> 1.0.0)
   - pop (~> 1.0)
   - ReactiveCocoa (= 2.5)
 
 SPEC CHECKSUMS:
+  ASProgressPopUpView: dfe44c9a0313ac93a8092bd361b59f52c83a7560
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
 
-PODFILE CHECKSUM: 38ce3bdff9e704e11aa240a755636759936ebe69
+PODFILE CHECKSUM: 0700f9a16b73d630c95136a99fbd44713fbc2fd9
 
 COCOAPODS: 1.2.0.beta.1

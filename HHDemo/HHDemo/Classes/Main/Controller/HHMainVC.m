@@ -45,7 +45,7 @@ static NSString *const cellIdentifier =@"cellIdentifier";
     ZOItem *item2 = [[ZOItem alloc] initWithTitle:@"MVVM和RAC" targetVc:[HHMVVMViewController class]];
     [self.dataArray addObject:item2];
     
-    ZOItem *item3 = [[ZOItem alloc] initWithTitle:@"断点续传" targetVc:[HHDownLoadVC class]];
+    ZOItem *item3 = [[ZOItem alloc] initWithTitle:@"断点下载" targetVc:[HHDownLoadVC class]];
     [self.dataArray addObject:item3];
     
     ZOItem *item4 = [[ZOItem alloc] initWithTitle:@"动画" targetVc:[HHAnimationVC class]];
