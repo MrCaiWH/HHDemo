@@ -15,6 +15,7 @@
 		4F25FACD1E72E5F400E80326 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F25FACC1E72E5F400E80326 /* Launch Screen.storyboard */; };
 		4F54A0741E782AB4001A7BF2 /* NSString+HHHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F54A0731E782AB4001A7BF2 /* NSString+HHHash.m */; };
 		4F63680A1DD604DA0018BA48 /* ZOItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F6368091DD604DA0018BA48 /* ZOItem.m */; };
+		4F65D3401E795376002C4555 /* MBProgressHUD+HHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F65D33F1E795376002C4555 /* MBProgressHUD+HHExtension.m */; };
 		8822510C798D6C48CBE93BF8 /* Pods_HHDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ACEB90893C35FF4D9392C91 /* Pods_HHDemo.framework */; };
 		DA0FEAC11E79195D00E542B3 /* HHVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0FEAC01E79195D00E542B3 /* HHVC.m */; };
 		DA0FEADA1E79319300E542B3 /* HHAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0FEAC91E79319300E542B3 /* HHAnimationVC.m */; };
@@ -50,6 +51,8 @@
 		4F54A0761E7830C0001A7BF2 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 		4F6368081DD604DA0018BA48 /* ZOItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZOItem.h; sourceTree = "<group>"; };
 		4F6368091DD604DA0018BA48 /* ZOItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZOItem.m; sourceTree = "<group>"; };
+		4F65D33E1E795376002C4555 /* MBProgressHUD+HHExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+HHExtension.h"; sourceTree = "<group>"; };
+		4F65D33F1E795376002C4555 /* MBProgressHUD+HHExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+HHExtension.m"; sourceTree = "<group>"; };
 		60902F94830BAEA292468BB1 /* Pods-HHDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HHDemo/Pods-HHDemo.release.xcconfig"; sourceTree = "<group>"; };
 		DA0FEABF1E79195D00E542B3 /* HHVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHVC.h; sourceTree = "<group>"; };
 		DA0FEAC01E79195D00E542B3 /* HHVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHVC.m; sourceTree = "<group>"; };
@@ -176,6 +179,8 @@
 				DA0FEAE71E793DD800E542B3 /* UIViewController+HHExtension.m */,
 				DA0FEAF01E79412700E542B3 /* UITableView+HHExtension.h */,
 				DA0FEAF11E79412700E542B3 /* UITableView+HHExtension.m */,
+				4F65D33E1E795376002C4555 /* MBProgressHUD+HHExtension.h */,
+				4F65D33F1E795376002C4555 /* MBProgressHUD+HHExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -451,6 +456,7 @@
 				DA0FEAC11E79195D00E542B3 /* HHVC.m in Sources */,
 				DA0FEAE51E79389B00E542B3 /* UIApplication+HHExtension.m in Sources */,
 				DA0FEAE21E79345E00E542B3 /* UIView+HHExtension.m in Sources */,
+				4F65D3401E795376002C4555 /* MBProgressHUD+HHExtension.m in Sources */,
 				DA0FEADB1E79319300E542B3 /* HHDownLoadVC.m in Sources */,
 				4F63680A1DD604DA0018BA48 /* ZOItem.m in Sources */,
 			);

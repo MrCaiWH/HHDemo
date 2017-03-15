@@ -13,5 +13,6 @@
 #import "ReactiveCocoa.h"
 #import "UIView+HHExtension.h"
 #import "UIApplication+HHExtension.h"
+#import "MBProgressHUD+HHExtension.h"
 
 #endif /* Constant_h */
