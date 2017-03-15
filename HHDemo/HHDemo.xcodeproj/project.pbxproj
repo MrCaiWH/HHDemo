@@ -23,6 +23,7 @@
 		DA0FEADD1E79319300E542B3 /* HHDownLoadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0FEAD11E79319300E542B3 /* HHDownLoadManager.m */; };
 		DA0FEADE1E79319300E542B3 /* HHEncodedVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0FEAD51E79319300E542B3 /* HHEncodedVC.m */; };
 		DA0FEADF1E79319300E542B3 /* HHMVVMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0FEAD91E79319300E542B3 /* HHMVVMViewController.m */; };
+		DA0FEAE21E79345E00E542B3 /* UIView+HHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0FEAE11E79345E00E542B3 /* UIView+HHExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,8 @@
 		DA0FEAD51E79319300E542B3 /* HHEncodedVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHEncodedVC.m; sourceTree = "<group>"; };
 		DA0FEAD81E79319300E542B3 /* HHMVVMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHMVVMViewController.h; sourceTree = "<group>"; };
 		DA0FEAD91E79319300E542B3 /* HHMVVMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHMVVMViewController.m; sourceTree = "<group>"; };
+		DA0FEAE01E79345E00E542B3 /* UIView+HHExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HHExtension.h"; sourceTree = "<group>"; };
+		DA0FEAE11E79345E00E542B3 /* UIView+HHExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HHExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +155,8 @@
 			children = (
 				4F54A0721E782AB4001A7BF2 /* NSString+HHHash.h */,
 				4F54A0731E782AB4001A7BF2 /* NSString+HHHash.m */,
+				DA0FEAE01E79345E00E542B3 /* UIView+HHExtension.h */,
+				DA0FEAE11E79345E00E542B3 /* UIView+HHExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -413,6 +418,7 @@
 				DA0FEADD1E79319300E542B3 /* HHDownLoadManager.m in Sources */,
 				4F21923F1DD36EA300D2ABFC /* HHMainNavVC.m in Sources */,
 				DA0FEAC11E79195D00E542B3 /* HHVC.m in Sources */,
+				DA0FEAE21E79345E00E542B3 /* UIView+HHExtension.m in Sources */,
 				DA0FEADB1E79319300E542B3 /* HHDownLoadVC.m in Sources */,
 				4F63680A1DD604DA0018BA48 /* ZOItem.m in Sources */,
 			);
