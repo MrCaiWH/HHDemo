@@ -12,6 +12,7 @@
 #import "HHMVVMViewController.h"
 #import "HHDownLoadVC.h"
 #import "HHAnimationVC.h"
+#import "UITableView+HHExtension.h"
 
 static NSString *const cellIdentifier =@"cellIdentifier";
 
@@ -35,7 +36,7 @@ static NSString *const cellIdentifier =@"cellIdentifier";
         make.top.bottom.left.right.equalTo(self.view);
     }];
     
-    self.tableView.tableFooterView = [[UIView alloc] init];
+    [self.tableView hiddenExtraCellLine];
  
     ZOItem *item1 = [[ZOItem alloc] initWithTitle:@"编码" targetVc:[HHEncodedVC class]];
     [self.dataArray addObject:item1];
