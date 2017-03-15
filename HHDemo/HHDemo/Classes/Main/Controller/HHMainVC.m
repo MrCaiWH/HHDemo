@@ -11,6 +11,7 @@
 #import "HHEncodedVC.h"
 #import "HHMVVMViewController.h"
 #import "HHDownLoadVC.h"
+#import "HHAnimationVC.h"
 
 static NSString *const cellIdentifier =@"cellIdentifier";
 
@@ -44,6 +45,9 @@ static NSString *const cellIdentifier =@"cellIdentifier";
     
     ZOItem *item3 = [[ZOItem alloc] initWithTitle:@"断点续传" targetVc:[HHDownLoadVC class]];
     [self.dataArray addObject:item3];
+    
+    ZOItem *item4 = [[ZOItem alloc] initWithTitle:@"动画" targetVc:[HHAnimationVC class]];
+    [self.dataArray addObject:item4];
 }
 
 #pragma mark - 数据源方法

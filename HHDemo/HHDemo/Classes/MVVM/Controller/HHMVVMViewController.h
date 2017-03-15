@@ -6,8 +6,8 @@
 //  Copyright © 2017年 黄花菜. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "HHVC.h"
 
-@interface HHMVVMViewController : UIViewController
+@interface HHMVVMViewController : HHVC
 
 @end
