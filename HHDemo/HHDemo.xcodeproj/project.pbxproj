@@ -16,6 +16,9 @@
 		4F54A0741E782AB4001A7BF2 /* NSString+HHHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F54A0731E782AB4001A7BF2 /* NSString+HHHash.m */; };
 		4F63680A1DD604DA0018BA48 /* ZOItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F6368091DD604DA0018BA48 /* ZOItem.m */; };
 		4F65D3401E795376002C4555 /* MBProgressHUD+HHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F65D33F1E795376002C4555 /* MBProgressHUD+HHExtension.m */; };
+		4F65D3451E795BFD002C4555 /* HHInternationalizationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F65D3441E795BFD002C4555 /* HHInternationalizationVC.m */; };
+		4F65D3491E795C7C002C4555 /* HHLanguageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F65D3471E795C7C002C4555 /* HHLanguageVC.m */; };
+		4F65D34A1E795C7C002C4555 /* HHLanguageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F65D3481E795C7C002C4555 /* HHLanguageVC.xib */; };
 		8822510C798D6C48CBE93BF8 /* Pods_HHDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ACEB90893C35FF4D9392C91 /* Pods_HHDemo.framework */; };
 		DA0FEAC11E79195D00E542B3 /* HHVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0FEAC01E79195D00E542B3 /* HHVC.m */; };
 		DA0FEADA1E79319300E542B3 /* HHAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0FEAC91E79319300E542B3 /* HHAnimationVC.m */; };
@@ -53,6 +56,11 @@
 		4F6368091DD604DA0018BA48 /* ZOItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZOItem.m; sourceTree = "<group>"; };
 		4F65D33E1E795376002C4555 /* MBProgressHUD+HHExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+HHExtension.h"; sourceTree = "<group>"; };
 		4F65D33F1E795376002C4555 /* MBProgressHUD+HHExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+HHExtension.m"; sourceTree = "<group>"; };
+		4F65D3431E795BFD002C4555 /* HHInternationalizationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHInternationalizationVC.h; sourceTree = "<group>"; };
+		4F65D3441E795BFD002C4555 /* HHInternationalizationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHInternationalizationVC.m; sourceTree = "<group>"; };
+		4F65D3461E795C7C002C4555 /* HHLanguageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHLanguageVC.h; sourceTree = "<group>"; };
+		4F65D3471E795C7C002C4555 /* HHLanguageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHLanguageVC.m; sourceTree = "<group>"; };
+		4F65D3481E795C7C002C4555 /* HHLanguageVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HHLanguageVC.xib; sourceTree = "<group>"; };
 		60902F94830BAEA292468BB1 /* Pods-HHDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HHDemo/Pods-HHDemo.release.xcconfig"; sourceTree = "<group>"; };
 		DA0FEABF1E79195D00E542B3 /* HHVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHVC.h; sourceTree = "<group>"; };
 		DA0FEAC01E79195D00E542B3 /* HHVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHVC.m; sourceTree = "<group>"; };
@@ -202,6 +210,26 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		4F65D3411E795BA9002C4555 /* Internationalization */ = {
+			isa = PBXGroup;
+			children = (
+				4F65D3421E795BA9002C4555 /* Controller */,
+			);
+			path = Internationalization;
+			sourceTree = "<group>";
+		};
+		4F65D3421E795BA9002C4555 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4F65D3431E795BFD002C4555 /* HHInternationalizationVC.h */,
+				4F65D3441E795BFD002C4555 /* HHInternationalizationVC.m */,
+				4F65D3461E795C7C002C4555 /* HHLanguageVC.h */,
+				4F65D3471E795C7C002C4555 /* HHLanguageVC.m */,
+				4F65D3481E795C7C002C4555 /* HHLanguageVC.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		69143FD78132CC0BB1DBB312 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +250,7 @@
 		DA0FEAC51E79319300E542B3 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				4F65D3411E795BA9002C4555 /* Internationalization */,
 				DA0FEAC61E79319300E542B3 /* Animation */,
 				DA0FEACA1E79319300E542B3 /* BreakpointResume */,
 				DA0FEAD21E79319300E542B3 /* Encoded */,
@@ -382,6 +411,7 @@
 			files = (
 				4F25FACD1E72E5F400E80326 /* Launch Screen.storyboard in Resources */,
 				4F2192271DD36CD000D2ABFC /* Assets.xcassets in Resources */,
+				4F65D34A1E795C7C002C4555 /* HHLanguageVC.xib in Resources */,
 				DA0FEADC1E79319300E542B3 /* HHDownLoadVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,11 +473,13 @@
 			files = (
 				DA0FEADA1E79319300E542B3 /* HHAnimationVC.m in Sources */,
 				4F2192391DD36E1900D2ABFC /* AppDelegate.m in Sources */,
+				4F65D3491E795C7C002C4555 /* HHLanguageVC.m in Sources */,
 				DA0FEAE81E793DD800E542B3 /* UIViewController+HHExtension.m in Sources */,
 				DA0FEADE1E79319300E542B3 /* HHEncodedVC.m in Sources */,
 				4F21923C1DD36E6900D2ABFC /* HHMainVC.m in Sources */,
 				4F21921C1DD36CD000D2ABFC /* main.m in Sources */,
 				4F54A0741E782AB4001A7BF2 /* NSString+HHHash.m in Sources */,
+				4F65D3451E795BFD002C4555 /* HHInternationalizationVC.m in Sources */,
 				DA0FEADF1E79319300E542B3 /* HHMVVMViewController.m in Sources */,
 				DA0FEAEF1E793E5400E542B3 /* HHHookTool.m in Sources */,
 				DA0FEADD1E79319300E542B3 /* HHDownLoadManager.m in Sources */,
