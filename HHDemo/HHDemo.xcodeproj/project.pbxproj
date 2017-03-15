@@ -13,6 +13,7 @@
 		4F21923C1DD36E6900D2ABFC /* HHMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F21923B1DD36E6900D2ABFC /* HHMainVC.m */; };
 		4F21923F1DD36EA300D2ABFC /* HHMainNavVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F21923E1DD36EA300D2ABFC /* HHMainNavVC.m */; };
 		4F25FACD1E72E5F400E80326 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F25FACC1E72E5F400E80326 /* Launch Screen.storyboard */; };
+		4F266BB61E799B4E0084D1E5 /* NSString+HHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F266BB51E799B4E0084D1E5 /* NSString+HHExtension.m */; };
 		4F54A0741E782AB4001A7BF2 /* NSString+HHHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F54A0731E782AB4001A7BF2 /* NSString+HHHash.m */; };
 		4F63680A1DD604DA0018BA48 /* ZOItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F6368091DD604DA0018BA48 /* ZOItem.m */; };
 		4F65D3401E795376002C4555 /* MBProgressHUD+HHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F65D33F1E795376002C4555 /* MBProgressHUD+HHExtension.m */; };
@@ -55,6 +56,8 @@
 		4F21923E1DD36EA300D2ABFC /* HHMainNavVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHMainNavVC.m; sourceTree = "<group>"; };
 		4F2192411DD37E0700D2ABFC /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		4F25FACC1E72E5F400E80326 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		4F266BB41E799B4E0084D1E5 /* NSString+HHExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HHExtension.h"; sourceTree = "<group>"; };
+		4F266BB51E799B4E0084D1E5 /* NSString+HHExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HHExtension.m"; sourceTree = "<group>"; };
 		4F54A0721E782AB4001A7BF2 /* NSString+HHHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HHHash.h"; sourceTree = "<group>"; };
 		4F54A0731E782AB4001A7BF2 /* NSString+HHHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HHHash.m"; sourceTree = "<group>"; };
 		4F54A0761E7830C0001A7BF2 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
@@ -214,6 +217,8 @@
 				4F65D33F1E795376002C4555 /* MBProgressHUD+HHExtension.m */,
 				4F65D34B1E797539002C4555 /* UIColor+HHExtend.h */,
 				4F65D34C1E797539002C4555 /* UIColor+HHExtend.m */,
+				4F266BB41E799B4E0084D1E5 /* NSString+HHExtension.h */,
+				4F266BB51E799B4E0084D1E5 /* NSString+HHExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -545,6 +550,7 @@
 				4F21923C1DD36E6900D2ABFC /* HHMainVC.m in Sources */,
 				4F21921C1DD36CD000D2ABFC /* main.m in Sources */,
 				4F54A0741E782AB4001A7BF2 /* NSString+HHHash.m in Sources */,
+				4F266BB61E799B4E0084D1E5 /* NSString+HHExtension.m in Sources */,
 				4F65D3451E795BFD002C4555 /* HHInternationalizationVC.m in Sources */,
 				DA0FEADF1E79319300E542B3 /* HHMVVMViewController.m in Sources */,
 				DA0FEAEF1E793E5400E542B3 /* HHHookTool.m in Sources */,
