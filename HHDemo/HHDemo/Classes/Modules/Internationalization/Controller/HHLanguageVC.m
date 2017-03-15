@@ -9,9 +9,6 @@
 #import "HHLanguageVC.h"
 #import "UITableView+HHExtension.h"
 
-/** APP语言环境 */
-NSString * const language = @"language";
-
 @interface HHLanguageVC ()<UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) UITableView *tableView;
 

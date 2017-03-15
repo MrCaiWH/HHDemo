@@ -16,6 +16,7 @@
 #import "UIApplication+HHExtension.h"
 #import "MBProgressHUD+HHExtension.h"
 #import "UIColor+HHExtend.h"
+#import "HHLanguageTool.h"
 // ------------------------------宏-------------------------
 //竖屏界面宽
 #define HHSCREEN_VERTICAL_WIDTH  MIN([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)
@@ -33,6 +34,8 @@
 #define HHUserDefaults [NSUserDefaults standardUserDefaults]
 //Document路径
 #define HHDocumentPath [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]
+//国际化
+#define kString(_KEY)  [HHLanguageTool dpLocalizedString:_KEY]
 
 // release状态下不打印东西，打包状态下提高性能
 #if DEBUG
