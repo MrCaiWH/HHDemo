@@ -14,6 +14,7 @@
 #import "HHAnimationVC.h"
 #import "UITableView+HHExtension.h"
 #import "HHInternationalizationVC.h"
+#import "HHCustomUIVC.h"
 
 static NSString *const cellIdentifier =@"cellIdentifier";
 
@@ -54,14 +55,11 @@ static NSString *const cellIdentifier =@"cellIdentifier";
     ZOItem *item5 = [[ZOItem alloc] initWithTitle:@"国际化" targetVc:[HHInternationalizationVC class]];
     [self.dataArray addObject:item5];
     
-    ZOItem *item6 = [[ZOItem alloc] initWithTitle:@"跑马灯" targetVc:[HHInternationalizationVC class]];
+    ZOItem *item6 = [[ZOItem alloc] initWithTitle:@"自定义UI" targetVc:[HHCustomUIVC class]];
     [self.dataArray addObject:item6];
     
-    ZOItem *item7 = [[ZOItem alloc] initWithTitle:@"滑块" targetVc:[HHInternationalizationVC class]];
+    ZOItem *item7 = [[ZOItem alloc] initWithTitle:@"响应链" targetVc:[HHInternationalizationVC class]];
     [self.dataArray addObject:item7];
-    
-    ZOItem *item8 = [[ZOItem alloc] initWithTitle:@"响应链" targetVc:[HHInternationalizationVC class]];
-    [self.dataArray addObject:item8];
 }
 
 #pragma mark - 数据源方法
