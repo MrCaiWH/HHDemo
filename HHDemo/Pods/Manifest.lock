@@ -1,5 +1,6 @@
 PODS:
   - Masonry (1.0.2)
+  - MBProgressHUD (1.0.0)
   - pop (1.0.9)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
@@ -11,14 +12,16 @@ PODS:
 
 DEPENDENCIES:
   - Masonry
+  - MBProgressHUD (~> 1.0.0)
   - pop (~> 1.0)
   - ReactiveCocoa (= 2.5)
 
 SPEC CHECKSUMS:
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
 
-PODFILE CHECKSUM: 8b11f5e926624a60b04e3996ef301a65a9afa470
+PODFILE CHECKSUM: 38ce3bdff9e704e11aa240a755636759936ebe69
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.0.beta.1

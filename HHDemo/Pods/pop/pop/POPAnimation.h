@@ -163,7 +163,6 @@ When combined with the autoreverses property, a singular animation is effectivel
 
 /**
  @abstract Returns an array containing the keys of all animations currently attached to the receiver.
- @param The order of keys reflects the order in which animations will be applied.
  */
 - (NSArray *)pop_animationKeys;
 
