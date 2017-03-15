@@ -7,33 +7,50 @@
 //
 
 #import "HHAnimationVC.h"
+#import "POP.h"
 
 @interface HHAnimationVC ()
-
+@property (nonatomic, strong) UIView *contentView;
 @end
 
 @implementation HHAnimationVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor whiteColor];
+    
+    //非常棒的动画教程
+//    https://github.com/AttackOnDobby/iOS-Core-Animation-Advanced-Techniques
+    
+//    POP默认支持三种动画 但同时也支持自定义动画
+//    POPBasicAnimation    //与Core Animation一样
+//    POPSpringAnimation  //弹簧动画
+//    POPDecayAnimation   //减速动画
+//    POPCustomAnimation //自定义动画
+    
     self.title = @"动画";
+    [self.view addSubview:self.contentView];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+    POPBasicAnimation *anim = [POPBasicAnimation animationWithPropertyNamed:kPOPViewAlpha];
+    anim.fromValue = @(0.0);
+    anim.toValue = @(1.0);
+    [self.contentView pop_addAnimation:anim forKey:@"fade"];
+    
+    POPSpringAnimation *scaleAnimation = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerScaleXY];
+    scaleAnimation.springBounciness = 10;
+    scaleAnimation.fromValue = [NSValue valueWithCGPoint:CGPointMake(1.2, 1.2)];
+    [self.contentView.layer pop_addAnimation:scaleAnimation forKey:@"scaleAnimation"];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (UIView *)contentView {
+    if (_contentView == nil) {
+        _contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
+        _contentView.center = self.view.center;
+        _contentView.backgroundColor = [UIColor redColor];
+    }
+    return _contentView;
 }
-*/
 
 @end
