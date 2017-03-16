@@ -40,6 +40,9 @@
 		DA0FEAEF1E793E5400E542B3 /* HHHookTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0FEAEE1E793E5400E542B3 /* HHHookTool.m */; };
 		DA0FEAF21E79412700E542B3 /* UITableView+HHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0FEAF11E79412700E542B3 /* UITableView+HHExtension.m */; };
 		DA97F5BA1E7A38600049CA3F /* HHSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA97F5B91E7A38600049CA3F /* HHSliderView.m */; };
+		DA97F6271E7A86E20049CA3F /* HHResponderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA97F6251E7A86E20049CA3F /* HHResponderVC.m */; };
+		DA97F6281E7A86E20049CA3F /* HHResponderVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA97F6261E7A86E20049CA3F /* HHResponderVC.xib */; };
+		DA97F62C1E7A87B90049CA3F /* HHRedView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA97F62B1E7A87B90049CA3F /* HHRedView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -113,6 +116,11 @@
 		DA0FEAF11E79412700E542B3 /* UITableView+HHExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+HHExtension.m"; sourceTree = "<group>"; };
 		DA97F5B81E7A38600049CA3F /* HHSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHSliderView.h; sourceTree = "<group>"; };
 		DA97F5B91E7A38600049CA3F /* HHSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHSliderView.m; sourceTree = "<group>"; };
+		DA97F6241E7A86E20049CA3F /* HHResponderVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHResponderVC.h; sourceTree = "<group>"; };
+		DA97F6251E7A86E20049CA3F /* HHResponderVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHResponderVC.m; sourceTree = "<group>"; };
+		DA97F6261E7A86E20049CA3F /* HHResponderVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HHResponderVC.xib; sourceTree = "<group>"; };
+		DA97F62A1E7A87B90049CA3F /* HHRedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHRedView.h; sourceTree = "<group>"; };
+		DA97F62B1E7A87B90049CA3F /* HHRedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHRedView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -313,6 +321,7 @@
 		DA0FEAC51E79319300E542B3 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				DA97F6221E7A86C60049CA3F /* Responder */,
 				4F65D3671E7991DA002C4555 /* Customer */,
 				4F65D3411E795BA9002C4555 /* Internationalization */,
 				DA0FEAC61E79319300E542B3 /* Animation */,
@@ -413,6 +422,34 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
+		DA97F6221E7A86C60049CA3F /* Responder */ = {
+			isa = PBXGroup;
+			children = (
+				DA97F6291E7A87A80049CA3F /* View */,
+				DA97F6231E7A86C60049CA3F /* Controller */,
+			);
+			path = Responder;
+			sourceTree = "<group>";
+		};
+		DA97F6231E7A86C60049CA3F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DA97F6241E7A86E20049CA3F /* HHResponderVC.h */,
+				DA97F6251E7A86E20049CA3F /* HHResponderVC.m */,
+				DA97F6261E7A86E20049CA3F /* HHResponderVC.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DA97F6291E7A87A80049CA3F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA97F62A1E7A87B90049CA3F /* HHRedView.h */,
+				DA97F62B1E7A87B90049CA3F /* HHRedView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -482,6 +519,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F65D3501E797745002C4555 /* Localizable.strings in Resources */,
+				DA97F6281E7A86E20049CA3F /* HHResponderVC.xib in Resources */,
 				4F25FACD1E72E5F400E80326 /* Launch Screen.storyboard in Resources */,
 				4F2192271DD36CD000D2ABFC /* Assets.xcassets in Resources */,
 				4F65D3741E79945D002C4555 /* HHCustomUIVC.xib in Resources */,
@@ -547,11 +585,13 @@
 			files = (
 				4F65D34D1E797539002C4555 /* UIColor+HHExtend.m in Sources */,
 				DA0FEADA1E79319300E542B3 /* HHAnimationVC.m in Sources */,
+				DA97F6271E7A86E20049CA3F /* HHResponderVC.m in Sources */,
 				4F2192391DD36E1900D2ABFC /* AppDelegate.m in Sources */,
 				4F65D3731E79945D002C4555 /* HHCustomUIVC.m in Sources */,
 				4F65D3491E795C7C002C4555 /* HHLanguageVC.m in Sources */,
 				DA0FEAE81E793DD800E542B3 /* UIViewController+HHExtension.m in Sources */,
 				DA0FEADE1E79319300E542B3 /* HHEncodedVC.m in Sources */,
+				DA97F62C1E7A87B90049CA3F /* HHRedView.m in Sources */,
 				4F21923C1DD36E6900D2ABFC /* HHMainVC.m in Sources */,
 				4F21921C1DD36CD000D2ABFC /* main.m in Sources */,
 				4F54A0741E782AB4001A7BF2 /* NSString+HHHash.m in Sources */,

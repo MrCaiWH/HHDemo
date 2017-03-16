@@ -15,6 +15,7 @@
 #import "UITableView+HHExtension.h"
 #import "HHInternationalizationVC.h"
 #import "HHCustomUIVC.h"
+#import "HHResponderVC.h"
 
 static NSString *const cellIdentifier =@"cellIdentifier";
 
@@ -58,7 +59,7 @@ static NSString *const cellIdentifier =@"cellIdentifier";
     ZOItem *item6 = [[ZOItem alloc] initWithTitle:@"自定义UI" targetVc:[HHCustomUIVC class]];
     [self.dataArray addObject:item6];
     
-    ZOItem *item7 = [[ZOItem alloc] initWithTitle:@"响应链" targetVc:[HHInternationalizationVC class]];
+    ZOItem *item7 = [[ZOItem alloc] initWithTitle:@"响应链" targetVc:[HHResponderVC class]];
     [self.dataArray addObject:item7];
 }
 
