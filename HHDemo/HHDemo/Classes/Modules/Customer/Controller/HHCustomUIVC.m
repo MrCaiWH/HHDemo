@@ -8,10 +8,13 @@
 
 #import "HHCustomUIVC.h"
 #import "HHLoopView.h"
+#import "HHSliderView.h"
 
 @interface HHCustomUIVC ()
 /** 跑马灯view */
 @property (nonatomic, strong) HHLoopView *loopView;
+
+@property (nonatomic, strong) HHSliderView *sliderView;
 @end
 
 @implementation HHCustomUIVC
@@ -20,6 +23,14 @@
     [super viewDidLoad];
     
     self.title = @"自定义UI";
+    
+    [self.view addSubview:self.sliderView];
+    
+//    [self.sliderView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.center.equalTo(self);
+//        make.width.equalTo(@149);
+//        make.height.equalTo(@57);
+//    }];
     
     NSArray *loopArrs = [NSArray arrayWithObjects:@"我叫黄花菜",@"我是一个程序猿",nil];
     [self addLoopView:loopArrs textColor:[UIColor blackColor]];
@@ -42,6 +53,15 @@
         [_loopView setSpeed:60.0f];
     }
     return _loopView;
+}
+
+- (HHSliderView *)sliderView {
+    if (_sliderView == nil) {
+        _sliderView = [[HHSliderView alloc] init];
+        _sliderView.frame = CGRectMake(0, 200, 149, 57);
+        _sliderView.hh_centerX = HHSCREEN_VERTICAL_WIDTH / 2;
+    }
+    return _sliderView;
 }
 
 -(void)dealloc {

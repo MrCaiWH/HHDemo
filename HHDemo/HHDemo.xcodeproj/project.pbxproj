@@ -39,6 +39,7 @@
 		DA0FEAE81E793DD800E542B3 /* UIViewController+HHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0FEAE71E793DD800E542B3 /* UIViewController+HHExtension.m */; };
 		DA0FEAEF1E793E5400E542B3 /* HHHookTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0FEAEE1E793E5400E542B3 /* HHHookTool.m */; };
 		DA0FEAF21E79412700E542B3 /* UITableView+HHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0FEAF11E79412700E542B3 /* UITableView+HHExtension.m */; };
+		DA97F5BA1E7A38600049CA3F /* HHSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA97F5B91E7A38600049CA3F /* HHSliderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +111,8 @@
 		DA0FEAEE1E793E5400E542B3 /* HHHookTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHHookTool.m; sourceTree = "<group>"; };
 		DA0FEAF01E79412700E542B3 /* UITableView+HHExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+HHExtension.h"; sourceTree = "<group>"; };
 		DA0FEAF11E79412700E542B3 /* UITableView+HHExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+HHExtension.m"; sourceTree = "<group>"; };
+		DA97F5B81E7A38600049CA3F /* HHSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHSliderView.h; sourceTree = "<group>"; };
+		DA97F5B91E7A38600049CA3F /* HHSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHSliderView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,6 +287,8 @@
 			children = (
 				4F65D36D1E7992F0002C4555 /* HHLoopView.h */,
 				4F65D36E1E7992F0002C4555 /* HHLoopView.m */,
+				DA97F5B81E7A38600049CA3F /* HHSliderView.h */,
+				DA97F5B91E7A38600049CA3F /* HHSliderView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -565,6 +570,7 @@
 				4F65D35B1E7978DD002C4555 /* HHLanguageTool.m in Sources */,
 				DA0FEADB1E79319300E542B3 /* HHDownLoadVC.m in Sources */,
 				4F63680A1DD604DA0018BA48 /* ZOItem.m in Sources */,
+				DA97F5BA1E7A38600049CA3F /* HHSliderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
