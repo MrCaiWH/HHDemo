@@ -9,4 +9,5 @@ target 'HHDemo' do
     pod 'pop', '~> 1.0'
     pod 'MBProgressHUD', '~> 1.0.0'
     pod 'ASProgressPopUpView'
+    pod 'SDWebImage', '~>3.8'
 end

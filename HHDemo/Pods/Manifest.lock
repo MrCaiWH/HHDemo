@@ -10,6 +10,9 @@ PODS:
   - ReactiveCocoa/no-arc (2.5)
   - ReactiveCocoa/UI (2.5):
     - ReactiveCocoa/Core
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
 
 DEPENDENCIES:
   - ASProgressPopUpView
@@ -17,6 +20,7 @@ DEPENDENCIES:
   - MBProgressHUD (~> 1.0.0)
   - pop (~> 1.0)
   - ReactiveCocoa (= 2.5)
+  - SDWebImage (~> 3.8)
 
 SPEC CHECKSUMS:
   ASProgressPopUpView: dfe44c9a0313ac93a8092bd361b59f52c83a7560
@@ -24,7 +28,8 @@ SPEC CHECKSUMS:
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
 
-PODFILE CHECKSUM: 0700f9a16b73d630c95136a99fbd44713fbc2fd9
+PODFILE CHECKSUM: 7d8543b6abd768a0c9fe64dc88006dffdb5423fc
 
-COCOAPODS: 1.2.0.beta.1
+COCOAPODS: 1.1.1
