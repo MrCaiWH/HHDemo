@@ -20,11 +20,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.title = @"断点下载";
+    self.title = @"断点续传";
     [self progressView1];
 }
 
-#pragma mark - IBAcation
+#pragma mark - IBAction
 /**
  * 开始下载
  */

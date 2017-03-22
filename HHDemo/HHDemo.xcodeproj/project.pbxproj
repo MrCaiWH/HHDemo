@@ -14,6 +14,8 @@
 		4F21923F1DD36EA300D2ABFC /* HHMainNavVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F21923E1DD36EA300D2ABFC /* HHMainNavVC.m */; };
 		4F25FACD1E72E5F400E80326 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F25FACC1E72E5F400E80326 /* Launch Screen.storyboard */; };
 		4F266BB61E799B4E0084D1E5 /* NSString+HHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F266BB51E799B4E0084D1E5 /* NSString+HHExtension.m */; };
+		4F28962D1E82AE2C00006B6E /* HHNetStudyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F28962B1E82AE2C00006B6E /* HHNetStudyVC.m */; };
+		4F28962E1E82AE2C00006B6E /* HHNetStudyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F28962C1E82AE2C00006B6E /* HHNetStudyVC.xib */; };
 		4F54A0741E782AB4001A7BF2 /* NSString+HHHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F54A0731E782AB4001A7BF2 /* NSString+HHHash.m */; };
 		4F63680A1DD604DA0018BA48 /* ZOItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F6368091DD604DA0018BA48 /* ZOItem.m */; };
 		4F65D3401E795376002C4555 /* MBProgressHUD+HHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F65D33F1E795376002C4555 /* MBProgressHUD+HHExtension.m */; };
@@ -62,6 +64,9 @@
 		4F25FACC1E72E5F400E80326 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		4F266BB41E799B4E0084D1E5 /* NSString+HHExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HHExtension.h"; sourceTree = "<group>"; };
 		4F266BB51E799B4E0084D1E5 /* NSString+HHExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HHExtension.m"; sourceTree = "<group>"; };
+		4F28962A1E82AE2C00006B6E /* HHNetStudyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHNetStudyVC.h; sourceTree = "<group>"; };
+		4F28962B1E82AE2C00006B6E /* HHNetStudyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHNetStudyVC.m; sourceTree = "<group>"; };
+		4F28962C1E82AE2C00006B6E /* HHNetStudyVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HHNetStudyVC.xib; sourceTree = "<group>"; };
 		4F54A0721E782AB4001A7BF2 /* NSString+HHHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HHHash.h"; sourceTree = "<group>"; };
 		4F54A0731E782AB4001A7BF2 /* NSString+HHHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HHHash.m"; sourceTree = "<group>"; };
 		4F54A0761E7830C0001A7BF2 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
@@ -211,6 +216,24 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		4F2896251E82A3E900006B6E /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				4F2896261E82A3E900006B6E /* Controller */,
+			);
+			path = Net;
+			sourceTree = "<group>";
+		};
+		4F2896261E82A3E900006B6E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4F28962A1E82AE2C00006B6E /* HHNetStudyVC.h */,
+				4F28962B1E82AE2C00006B6E /* HHNetStudyVC.m */,
+				4F28962C1E82AE2C00006B6E /* HHNetStudyVC.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		4F54A06E1E782A69001A7BF2 /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -321,6 +344,7 @@
 		DA0FEAC51E79319300E542B3 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				4F2896251E82A3E900006B6E /* Net */,
 				DA97F6221E7A86C60049CA3F /* Responder */,
 				4F65D3671E7991DA002C4555 /* Customer */,
 				4F65D3411E795BA9002C4555 /* Internationalization */,
@@ -520,6 +544,7 @@
 			files = (
 				4F65D3501E797745002C4555 /* Localizable.strings in Resources */,
 				DA97F6281E7A86E20049CA3F /* HHResponderVC.xib in Resources */,
+				4F28962E1E82AE2C00006B6E /* HHNetStudyVC.xib in Resources */,
 				4F25FACD1E72E5F400E80326 /* Launch Screen.storyboard in Resources */,
 				4F2192271DD36CD000D2ABFC /* Assets.xcassets in Resources */,
 				4F65D3741E79945D002C4555 /* HHCustomUIVC.xib in Resources */,
@@ -594,6 +619,7 @@
 				DA97F62C1E7A87B90049CA3F /* HHRedView.m in Sources */,
 				4F21923C1DD36E6900D2ABFC /* HHMainVC.m in Sources */,
 				4F21921C1DD36CD000D2ABFC /* main.m in Sources */,
+				4F28962D1E82AE2C00006B6E /* HHNetStudyVC.m in Sources */,
 				4F54A0741E782AB4001A7BF2 /* NSString+HHHash.m in Sources */,
 				4F266BB61E799B4E0084D1E5 /* NSString+HHExtension.m in Sources */,
 				4F65D3451E795BFD002C4555 /* HHInternationalizationVC.m in Sources */,

@@ -16,6 +16,7 @@
 #import "HHInternationalizationVC.h"
 #import "HHCustomUIVC.h"
 #import "HHResponderVC.h"
+#import "HHNetStudyVC.h"
 
 static NSString *const cellIdentifier =@"cellIdentifier";
 
@@ -47,7 +48,7 @@ static NSString *const cellIdentifier =@"cellIdentifier";
     ZOItem *item2 = [[ZOItem alloc] initWithTitle:@"MVVM和RAC" targetVc:[HHMVVMViewController class]];
     [self.dataArray addObject:item2];
     
-    ZOItem *item3 = [[ZOItem alloc] initWithTitle:@"断点下载" targetVc:[HHDownLoadVC class]];
+    ZOItem *item3 = [[ZOItem alloc] initWithTitle:@"断点续传" targetVc:[HHDownLoadVC class]];
     [self.dataArray addObject:item3];
     
     ZOItem *item4 = [[ZOItem alloc] initWithTitle:@"动画" targetVc:[HHAnimationVC class]];
@@ -61,6 +62,9 @@ static NSString *const cellIdentifier =@"cellIdentifier";
     
     ZOItem *item7 = [[ZOItem alloc] initWithTitle:@"响应链" targetVc:[HHResponderVC class]];
     [self.dataArray addObject:item7];
+    
+    ZOItem *item8 = [[ZOItem alloc] initWithTitle:@"网络学习" targetVc:[HHNetStudyVC class]];
+    [self.dataArray addObject:item8];
 }
 
 #pragma mark - 数据源方法
