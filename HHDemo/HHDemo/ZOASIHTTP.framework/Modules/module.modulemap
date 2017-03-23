@@ -1,0 +1,6 @@
+framework module ZOASIHTTP {
+  umbrella header "ZOASIHTTP.h"
+
+  export *
+  module * { export * }
+}
