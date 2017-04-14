@@ -29,6 +29,7 @@
 		4F65D3731E79945D002C4555 /* HHCustomUIVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F65D3711E79945D002C4555 /* HHCustomUIVC.m */; };
 		4F65D3741E79945D002C4555 /* HHCustomUIVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F65D3721E79945D002C4555 /* HHCustomUIVC.xib */; };
 		8822510C798D6C48CBE93BF8 /* Pods_HHDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ACEB90893C35FF4D9392C91 /* Pods_HHDemo.framework */; };
+		DA0B0EFA1EA07605003B4697 /* HHButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0B0EF91EA07605003B4697 /* HHButton.m */; };
 		DA0FEAC11E79195D00E542B3 /* HHVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0FEAC01E79195D00E542B3 /* HHVC.m */; };
 		DA0FEADA1E79319300E542B3 /* HHAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0FEAC91E79319300E542B3 /* HHAnimationVC.m */; };
 		DA0FEADB1E79319300E542B3 /* HHDownLoadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0FEACD1E79319300E542B3 /* HHDownLoadVC.m */; };
@@ -96,6 +97,8 @@
 		4F65D3711E79945D002C4555 /* HHCustomUIVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHCustomUIVC.m; sourceTree = "<group>"; };
 		4F65D3721E79945D002C4555 /* HHCustomUIVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HHCustomUIVC.xib; sourceTree = "<group>"; };
 		60902F94830BAEA292468BB1 /* Pods-HHDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HHDemo/Pods-HHDemo.release.xcconfig"; sourceTree = "<group>"; };
+		DA0B0EF81EA07605003B4697 /* HHButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHButton.h; sourceTree = "<group>"; };
+		DA0B0EF91EA07605003B4697 /* HHButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHButton.m; sourceTree = "<group>"; };
 		DA0FEABF1E79195D00E542B3 /* HHVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHVC.h; sourceTree = "<group>"; };
 		DA0FEAC01E79195D00E542B3 /* HHVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHVC.m; sourceTree = "<group>"; };
 		DA0FEAC81E79319300E542B3 /* HHAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHAnimationVC.h; sourceTree = "<group>"; };
@@ -185,6 +188,7 @@
 			children = (
 				4F2192371DD36E1900D2ABFC /* AppDelegate.h */,
 				4F2192381DD36E1900D2ABFC /* AppDelegate.m */,
+				DA0B0EF71EA075C2003B4697 /* CustomUI */,
 				DA0FEAC51E79319300E542B3 /* Modules */,
 				4F54A0751E7830B3001A7BF2 /* Config */,
 				4F54A06E1E782A69001A7BF2 /* Category */,
@@ -339,6 +343,15 @@
 				1ACEB90893C35FF4D9392C91 /* Pods_HHDemo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA0B0EF71EA075C2003B4697 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				DA0B0EF81EA07605003B4697 /* HHButton.h */,
+				DA0B0EF91EA07605003B4697 /* HHButton.m */,
+			);
+			path = CustomUI;
 			sourceTree = "<group>";
 		};
 		DA0FEAC51E79319300E542B3 /* Modules */ = {
@@ -621,6 +634,7 @@
 				4F21921C1DD36CD000D2ABFC /* main.m in Sources */,
 				4F28962D1E82AE2C00006B6E /* HHNetStudyVC.m in Sources */,
 				4F54A0741E782AB4001A7BF2 /* NSString+HHHash.m in Sources */,
+				DA0B0EFA1EA07605003B4697 /* HHButton.m in Sources */,
 				4F266BB61E799B4E0084D1E5 /* NSString+HHExtension.m in Sources */,
 				4F65D3451E795BFD002C4555 /* HHInternationalizationVC.m in Sources */,
 				DA0FEADF1E79319300E542B3 /* HHMVVMViewController.m in Sources */,
