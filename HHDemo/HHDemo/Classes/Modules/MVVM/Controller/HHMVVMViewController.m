@@ -7,9 +7,10 @@
 //
 
 #import "HHMVVMViewController.h"
+#import "HHMVVMView.h"
 
 @interface HHMVVMViewController ()
-
+@property (nonatomic, strong) HHMVVMView *mvvmView;
 @end
 
 @implementation HHMVVMViewController
@@ -19,6 +20,8 @@
     // Do any additional setup after loading the view.
     
     self.title = @"MVVM和RAC";
+    
+    [self.view addSubview:self.mvvmView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -30,4 +33,14 @@
     NSLog(@"%@",HHCurrentVC);
 }
 
+- (HHMVVMView *)mvvmView {
+    if (_mvvmView == nil) {
+        _mvvmView = [[HHMVVMView alloc] initWithFrame:CGRectMake(100, 100, 200, 100)];
+        _mvvmView.backgroundColor = [UIColor redColor];
+        [_mvvmView.subject subscribeNext:^(id x) {
+            NSLog(@"%s  %@",__func__,x);
+        }];
+    }
+    return _mvvmView;
+}
 @end

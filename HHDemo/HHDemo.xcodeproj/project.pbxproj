@@ -28,6 +28,7 @@
 		4F65D36F1E7992F0002C4555 /* HHLoopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F65D36E1E7992F0002C4555 /* HHLoopView.m */; };
 		4F65D3731E79945D002C4555 /* HHCustomUIVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F65D3711E79945D002C4555 /* HHCustomUIVC.m */; };
 		4F65D3741E79945D002C4555 /* HHCustomUIVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F65D3721E79945D002C4555 /* HHCustomUIVC.xib */; };
+		4F979DC91EA6623100F4745F /* HHMVVMView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F979DC81EA6623100F4745F /* HHMVVMView.m */; };
 		8822510C798D6C48CBE93BF8 /* Pods_HHDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ACEB90893C35FF4D9392C91 /* Pods_HHDemo.framework */; };
 		DA0B0EFA1EA07605003B4697 /* HHButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0B0EF91EA07605003B4697 /* HHButton.m */; };
 		DA0FEAC11E79195D00E542B3 /* HHVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0FEAC01E79195D00E542B3 /* HHVC.m */; };
@@ -96,6 +97,8 @@
 		4F65D3701E79945D002C4555 /* HHCustomUIVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHCustomUIVC.h; sourceTree = "<group>"; };
 		4F65D3711E79945D002C4555 /* HHCustomUIVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHCustomUIVC.m; sourceTree = "<group>"; };
 		4F65D3721E79945D002C4555 /* HHCustomUIVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HHCustomUIVC.xib; sourceTree = "<group>"; };
+		4F979DC71EA6623100F4745F /* HHMVVMView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHMVVMView.h; sourceTree = "<group>"; };
+		4F979DC81EA6623100F4745F /* HHMVVMView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHMVVMView.m; sourceTree = "<group>"; };
 		60902F94830BAEA292468BB1 /* Pods-HHDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HHDemo/Pods-HHDemo.release.xcconfig"; sourceTree = "<group>"; };
 		DA0B0EF81EA07605003B4697 /* HHButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHButton.h; sourceTree = "<group>"; };
 		DA0B0EF91EA07605003B4697 /* HHButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHButton.m; sourceTree = "<group>"; };
@@ -328,6 +331,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		4F979DC31EA6620A00F4745F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4F979DC71EA6623100F4745F /* HHMVVMView.h */,
+				4F979DC81EA6623100F4745F /* HHMVVMView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		69143FD78132CC0BB1DBB312 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -434,6 +446,7 @@
 		DA0FEAD61E79319300E542B3 /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				4F979DC31EA6620A00F4745F /* View */,
 				DA0FEAD71E79319300E542B3 /* Controller */,
 			);
 			path = MVVM;
@@ -624,6 +637,7 @@
 				4F65D34D1E797539002C4555 /* UIColor+HHExtend.m in Sources */,
 				DA0FEADA1E79319300E542B3 /* HHAnimationVC.m in Sources */,
 				DA97F6271E7A86E20049CA3F /* HHResponderVC.m in Sources */,
+				4F979DC91EA6623100F4745F /* HHMVVMView.m in Sources */,
 				4F2192391DD36E1900D2ABFC /* AppDelegate.m in Sources */,
 				4F65D3731E79945D002C4555 /* HHCustomUIVC.m in Sources */,
 				4F65D3491E795C7C002C4555 /* HHLanguageVC.m in Sources */,
