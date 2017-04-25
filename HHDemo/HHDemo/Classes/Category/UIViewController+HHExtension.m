@@ -18,13 +18,13 @@
 
 -(void)hh_viewDidLoad {
     
-    NSLog(@"%s",__func__);
+//    NSLog(@"%s",__func__);
     [self hh_viewDidLoad];
 }
 
 -(void)hh_viewWillAppear:(BOOL)animated {
     
-    NSLog(@"%s",__func__);
+//    NSLog(@"%s",__func__);
     
     HHCurrentVC = self;
     [self hh_viewWillAppear:animated];
