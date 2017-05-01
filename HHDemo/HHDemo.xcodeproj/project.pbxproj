@@ -29,8 +29,6 @@
 		4F65D3731E79945D002C4555 /* HHCustomUIVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F65D3711E79945D002C4555 /* HHCustomUIVC.m */; };
 		4F65D3741E79945D002C4555 /* HHCustomUIVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F65D3721E79945D002C4555 /* HHCustomUIVC.xib */; };
 		4F979DC91EA6623100F4745F /* HHMVVMView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F979DC81EA6623100F4745F /* HHMVVMView.m */; };
-		4FECCB6D1EB4611F007D0F79 /* HHLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FECCB6B1EB4611F007D0F79 /* HHLiveViewController.m */; };
-		4FECCB6E1EB4611F007D0F79 /* HHLiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FECCB6C1EB4611F007D0F79 /* HHLiveViewController.xib */; };
 		4FECCB721EB47416007D0F79 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FECCB711EB47416007D0F79 /* libz.tbd */; };
 		4FECCB741EB4741F007D0F79 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FECCB731EB4741F007D0F79 /* libbz2.tbd */; };
 		4FECCB761EB47428007D0F79 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FECCB751EB47428007D0F79 /* AudioToolbox.framework */; };
@@ -114,9 +112,6 @@
 		4F65D3721E79945D002C4555 /* HHCustomUIVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HHCustomUIVC.xib; sourceTree = "<group>"; };
 		4F979DC71EA6623100F4745F /* HHMVVMView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHMVVMView.h; sourceTree = "<group>"; };
 		4F979DC81EA6623100F4745F /* HHMVVMView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHMVVMView.m; sourceTree = "<group>"; };
-		4FECCB6A1EB4611F007D0F79 /* HHLiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHLiveViewController.h; sourceTree = "<group>"; };
-		4FECCB6B1EB4611F007D0F79 /* HHLiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHLiveViewController.m; sourceTree = "<group>"; };
-		4FECCB6C1EB4611F007D0F79 /* HHLiveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HHLiveViewController.xib; sourceTree = "<group>"; };
 		4FECCB711EB47416007D0F79 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		4FECCB731EB4741F007D0F79 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
 		4FECCB751EB47428007D0F79 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -384,24 +379,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		4FECCB681EB460EE007D0F79 /* Live */ = {
-			isa = PBXGroup;
-			children = (
-				4FECCB691EB460EE007D0F79 /* Controller */,
-			);
-			path = Live;
-			sourceTree = "<group>";
-		};
-		4FECCB691EB460EE007D0F79 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				4FECCB6A1EB4611F007D0F79 /* HHLiveViewController.h */,
-				4FECCB6B1EB4611F007D0F79 /* HHLiveViewController.m */,
-				4FECCB6C1EB4611F007D0F79 /* HHLiveViewController.xib */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
 		69143FD78132CC0BB1DBB312 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -444,7 +421,6 @@
 		DA0FEAC51E79319300E542B3 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				4FECCB681EB460EE007D0F79 /* Live */,
 				4F2896251E82A3E900006B6E /* Net */,
 				DA97F6221E7A86C60049CA3F /* Responder */,
 				4F65D3671E7991DA002C4555 /* Customer */,
@@ -648,7 +624,6 @@
 				DA97F6281E7A86E20049CA3F /* HHResponderVC.xib in Resources */,
 				4F28962E1E82AE2C00006B6E /* HHNetStudyVC.xib in Resources */,
 				4F25FACD1E72E5F400E80326 /* Launch Screen.storyboard in Resources */,
-				4FECCB6E1EB4611F007D0F79 /* HHLiveViewController.xib in Resources */,
 				4F2192271DD36CD000D2ABFC /* Assets.xcassets in Resources */,
 				4F65D3741E79945D002C4555 /* HHCustomUIVC.xib in Resources */,
 				4F65D34A1E795C7C002C4555 /* HHLanguageVC.xib in Resources */,
@@ -727,7 +702,6 @@
 				4F54A0741E782AB4001A7BF2 /* NSString+HHHash.m in Sources */,
 				DA0B0EFA1EA07605003B4697 /* HHButton.m in Sources */,
 				4F266BB61E799B4E0084D1E5 /* NSString+HHExtension.m in Sources */,
-				4FECCB6D1EB4611F007D0F79 /* HHLiveViewController.m in Sources */,
 				4F65D3451E795BFD002C4555 /* HHInternationalizationVC.m in Sources */,
 				DA0FEADF1E79319300E542B3 /* HHMVVMViewController.m in Sources */,
 				DA0FEAEF1E793E5400E542B3 /* HHHookTool.m in Sources */,
