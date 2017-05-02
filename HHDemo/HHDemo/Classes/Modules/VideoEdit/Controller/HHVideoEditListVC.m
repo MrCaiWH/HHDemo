@@ -10,6 +10,7 @@
 #import "ZOItem.h"
 #import "UITableView+HHExtension.h"
 #import "HHAddMusicVC.h"
+#import "HHAddWatermarkVC.h"
 
 static NSString *const cellIdentifier =@"cellIdentifier";
 
@@ -38,6 +39,9 @@ static NSString *const cellIdentifier =@"cellIdentifier";
     
     ZOItem *item1 = [[ZOItem alloc] initWithTitle:@"增加背景音乐" targetVc:[HHAddMusicVC class]];
     [self.dataArray addObject:item1];
+    
+    ZOItem *item2 = [[ZOItem alloc] initWithTitle:@"增加水印" targetVc:[HHAddWatermarkVC class]];
+    [self.dataArray addObject:item2];
 }
 
 #pragma mark - 数据源方法
