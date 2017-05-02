@@ -9,7 +9,6 @@
 #import "HHAddWatermarkVC.h"
 #import <AVFoundation/AVFoundation.h>
 #import "MBProgressHUD+HHExtension.h"
-#import "g"
 
 @interface HHAddWatermarkVC ()
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;

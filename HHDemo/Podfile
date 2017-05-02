@@ -15,4 +15,5 @@ target 'HHDemo' do
     pod 'MJExtension'
     pod 'Aspects'
     pod 'PromiseKit', '~> 1.6'
+    pod 'GPUImage'
 end
