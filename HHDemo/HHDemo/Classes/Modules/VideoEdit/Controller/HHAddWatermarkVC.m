@@ -9,6 +9,7 @@
 #import "HHAddWatermarkVC.h"
 #import <AVFoundation/AVFoundation.h>
 #import "MBProgressHUD+HHExtension.h"
+#import <GPUImage/GPUImage.h>
 
 @interface HHAddWatermarkVC ()
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
@@ -66,26 +67,16 @@
     
     [self.player pause];
     
+    // 路径
+    NSString *documents = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
+    // 最终合成输出路径
+    NSString *outPutFilePath = [documents stringByAppendingPathComponent:@"watermark.mp4"];
+    // 添加合成路径
+    NSURL *outputFileUrl = [NSURL fileURLWithPath:outPutFilePath];
+    
     // 视频来源
     NSURL *videoInputUrl = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"20170418_162554944" ofType:@"mp4"]];
-    
-    //获取视频的大小(画面大小)，来确定水印的位置和大小;
-    AVAsset *fileas = [AVAsset assetWithURL:videoInputUrl];
-    CGSize movieSize = fileas.naturalSize;
-    
-    UIImage *image = [UIImage imageNamed:@"sample01"];
-    UIImageView *imv = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 800, 560)];
-    [imv setImage:image];
-    UIView *vi = [[UIView alloc] initWithFrame:CGRectMake(0, 0, movieSize.width, movieSize.height)];
-    vi.backgroundColor = [UIColor clearColor];
-    imv.center = CGPointMake(vi.bounds.size.width, vi.bounds.size.height + 80);
-    [vi addSubview:imv];
-    
-//    _landInput = [[GPUImageUIElement alloc] initWithView:vi];
-//    _landBlendFilter = [[GPUImageAlphaBlendFilter alloc] init];
-//    //mix即为叠加后的透明度,这里就直接写1.0了
-//    _landBlendFilter.mix = 1.0f;
-//    
+
     // mbp提示框
     [MBProgressHUD showStatusWithMessage:@"正在处理中"];
 }
