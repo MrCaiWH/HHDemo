@@ -59,6 +59,8 @@
 		DA81C9E91EB8279D00DA939B /* HHVideoEditListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA81C9E71EB8279D00DA939B /* HHVideoEditListVC.m */; };
 		DA81C9EE1EB828C500DA939B /* HHAddMusicVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA81C9EC1EB828C500DA939B /* HHAddMusicVC.m */; };
 		DA81C9EF1EB828C500DA939B /* HHAddMusicVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA81C9ED1EB828C500DA939B /* HHAddMusicVC.xib */; };
+		DA81C9F41EB82D6D00DA939B /* 20170418_162554944.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DA81C9F31EB82D6D00DA939B /* 20170418_162554944.mp4 */; };
+		DA81C9F61EB82DAA00DA939B /* Folk Song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DA81C9F51EB82DAA00DA939B /* Folk Song.mp3 */; };
 		DA97F5BA1E7A38600049CA3F /* HHSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA97F5B91E7A38600049CA3F /* HHSliderView.m */; };
 		DA97F6271E7A86E20049CA3F /* HHResponderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA97F6251E7A86E20049CA3F /* HHResponderVC.m */; };
 		DA97F6281E7A86E20049CA3F /* HHResponderVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA97F6261E7A86E20049CA3F /* HHResponderVC.xib */; };
@@ -159,6 +161,8 @@
 		DA81C9EB1EB828C500DA939B /* HHAddMusicVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHAddMusicVC.h; sourceTree = "<group>"; };
 		DA81C9EC1EB828C500DA939B /* HHAddMusicVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHAddMusicVC.m; sourceTree = "<group>"; };
 		DA81C9ED1EB828C500DA939B /* HHAddMusicVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HHAddMusicVC.xib; sourceTree = "<group>"; };
+		DA81C9F31EB82D6D00DA939B /* 20170418_162554944.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 20170418_162554944.mp4; sourceTree = "<group>"; };
+		DA81C9F51EB82DAA00DA939B /* Folk Song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Folk Song.mp3"; sourceTree = "<group>"; };
 		DA97F5B81E7A38600049CA3F /* HHSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHSliderView.h; sourceTree = "<group>"; };
 		DA97F5B91E7A38600049CA3F /* HHSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHSliderView.m; sourceTree = "<group>"; };
 		DA97F6241E7A86E20049CA3F /* HHResponderVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHResponderVC.h; sourceTree = "<group>"; };
@@ -238,6 +242,7 @@
 			children = (
 				4F2192371DD36E1900D2ABFC /* AppDelegate.h */,
 				4F2192381DD36E1900D2ABFC /* AppDelegate.m */,
+				DA81C9F01EB82D4B00DA939B /* Resource */,
 				DA0B0EF71EA075C2003B4697 /* CustomUI */,
 				DA0FEAC51E79319300E542B3 /* Modules */,
 				4F54A0751E7830B3001A7BF2 /* Config */,
@@ -553,6 +558,31 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		DA81C9F01EB82D4B00DA939B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				DA81C9F11EB82D4B00DA939B /* MP3 */,
+				DA81C9F21EB82D4B00DA939B /* Video */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		DA81C9F11EB82D4B00DA939B /* MP3 */ = {
+			isa = PBXGroup;
+			children = (
+				DA81C9F51EB82DAA00DA939B /* Folk Song.mp3 */,
+			);
+			path = MP3;
+			sourceTree = "<group>";
+		};
+		DA81C9F21EB82D4B00DA939B /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				DA81C9F31EB82D6D00DA939B /* 20170418_162554944.mp4 */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
 		DA97F6221E7A86C60049CA3F /* Responder */ = {
 			isa = PBXGroup;
 			children = (
@@ -655,7 +685,9 @@
 				4F25FACD1E72E5F400E80326 /* Launch Screen.storyboard in Resources */,
 				4F2192271DD36CD000D2ABFC /* Assets.xcassets in Resources */,
 				4F65D3741E79945D002C4555 /* HHCustomUIVC.xib in Resources */,
+				DA81C9F61EB82DAA00DA939B /* Folk Song.mp3 in Resources */,
 				4F65D34A1E795C7C002C4555 /* HHLanguageVC.xib in Resources */,
+				DA81C9F41EB82D6D00DA939B /* 20170418_162554944.mp4 in Resources */,
 				DA0FEADC1E79319300E542B3 /* HHDownLoadVC.xib in Resources */,
 				DA81C9EF1EB828C500DA939B /* HHAddMusicVC.xib in Resources */,
 			);
