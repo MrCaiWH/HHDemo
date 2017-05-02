@@ -17,7 +17,7 @@
 #import "HHCustomUIVC.h"
 #import "HHResponderVC.h"
 #import "HHNetStudyVC.h"
-#import "HHLiveViewController.h"
+#import "HHVideoEditListVC.h"
 
 static NSString *const cellIdentifier =@"cellIdentifier";
 
@@ -67,7 +67,7 @@ static NSString *const cellIdentifier =@"cellIdentifier";
     ZOItem *item8 = [[ZOItem alloc] initWithTitle:@"网络学习" targetVc:[HHNetStudyVC class]];
     [self.dataArray addObject:item8];
     
-    ZOItem *item9 = [[ZOItem alloc] initWithTitle:@"直播" targetVc:[HHLiveViewController class]];
+    ZOItem *item9 = [[ZOItem alloc] initWithTitle:@"视频编辑" targetVc:[HHVideoEditListVC class]];
     [self.dataArray addObject:item9];
 }
 
