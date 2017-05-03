@@ -56,6 +56,7 @@
 		DA0FEAE81E793DD800E542B3 /* UIViewController+HHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0FEAE71E793DD800E542B3 /* UIViewController+HHExtension.m */; };
 		DA0FEAEF1E793E5400E542B3 /* HHHookTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0FEAEE1E793E5400E542B3 /* HHHookTool.m */; };
 		DA0FEAF21E79412700E542B3 /* UITableView+HHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0FEAF11E79412700E542B3 /* UITableView+HHExtension.m */; };
+		DA42EC2B1EB98F55003295BC /* VideoService.m in Sources */ = {isa = PBXBuildFile; fileRef = DA42EC2A1EB98F55003295BC /* VideoService.m */; };
 		DA81C9E91EB8279D00DA939B /* HHVideoEditListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA81C9E71EB8279D00DA939B /* HHVideoEditListVC.m */; };
 		DA81C9EE1EB828C500DA939B /* HHAddMusicVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA81C9EC1EB828C500DA939B /* HHAddMusicVC.m */; };
 		DA81C9EF1EB828C500DA939B /* HHAddMusicVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA81C9ED1EB828C500DA939B /* HHAddMusicVC.xib */; };
@@ -158,6 +159,8 @@
 		DA0FEAEE1E793E5400E542B3 /* HHHookTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHHookTool.m; sourceTree = "<group>"; };
 		DA0FEAF01E79412700E542B3 /* UITableView+HHExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+HHExtension.h"; sourceTree = "<group>"; };
 		DA0FEAF11E79412700E542B3 /* UITableView+HHExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+HHExtension.m"; sourceTree = "<group>"; };
+		DA42EC291EB98F55003295BC /* VideoService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoService.h; sourceTree = "<group>"; };
+		DA42EC2A1EB98F55003295BC /* VideoService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoService.m; sourceTree = "<group>"; };
 		DA81C9E61EB8279D00DA939B /* HHVideoEditListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHVideoEditListVC.h; sourceTree = "<group>"; };
 		DA81C9E71EB8279D00DA939B /* HHVideoEditListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHVideoEditListVC.m; sourceTree = "<group>"; };
 		DA81C9EB1EB828C500DA939B /* HHAddMusicVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHAddMusicVC.h; sourceTree = "<group>"; };
@@ -554,6 +557,8 @@
 		DA81C9E51EB8274500DA939B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DA42EC291EB98F55003295BC /* VideoService.h */,
+				DA42EC2A1EB98F55003295BC /* VideoService.m */,
 				DA81C9E61EB8279D00DA939B /* HHVideoEditListVC.h */,
 				DA81C9E71EB8279D00DA939B /* HHVideoEditListVC.m */,
 				DA81C9EB1EB828C500DA939B /* HHAddMusicVC.h */,
@@ -758,6 +763,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F65D34D1E797539002C4555 /* UIColor+HHExtend.m in Sources */,
+				DA42EC2B1EB98F55003295BC /* VideoService.m in Sources */,
 				DA0FEADA1E79319300E542B3 /* HHAnimationVC.m in Sources */,
 				DA97F6271E7A86E20049CA3F /* HHResponderVC.m in Sources */,
 				4F979DC91EA6623100F4745F /* HHMVVMView.m in Sources */,
