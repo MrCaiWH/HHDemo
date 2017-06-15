@@ -16,4 +16,5 @@ target 'HHDemo' do
     pod 'Aspects'
     pod 'PromiseKit', '~> 1.6'
     pod 'GPUImage'
+    pod 'YYKit'
 end
