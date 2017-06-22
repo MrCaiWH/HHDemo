@@ -16,6 +16,13 @@ PODS:
     - AFNetworking/NSURLSession
   - Aspects (1.4.1)
   - ASProgressPopUpView (0.9)
+  - AsyncDisplayKit (2.2.1):
+    - AsyncDisplayKit/PINRemoteImage (= 2.2.1)
+  - AsyncDisplayKit/Core (2.2.1)
+  - AsyncDisplayKit/PINRemoteImage (2.2.1):
+    - AsyncDisplayKit/Core
+    - PINRemoteImage/iOS (= 3.0.0-beta.8)
+    - PINRemoteImage/PINCache
   - GPUImage (0.1.7)
   - Masonry (1.0.2)
   - MBProgressHUD (1.0.0)
@@ -28,6 +35,20 @@ PODS:
     - OMGHTTPURLRQ/FormURLEncode
     - OMGHTTPURLRQ/UserAgent
   - OMGHTTPURLRQ/UserAgent (2.1.3)
+  - PINCache (3.0.1-beta.4):
+    - PINCache/Arc-exception-safe (= 3.0.1-beta.4)
+    - PINCache/Core (= 3.0.1-beta.4)
+  - PINCache/Arc-exception-safe (3.0.1-beta.4):
+    - PINCache/Core
+  - PINCache/Core (3.0.1-beta.4):
+    - PINOperation (= 1.0.3)
+  - PINOperation (1.0.3)
+  - PINRemoteImage/Core (3.0.0-beta.8)
+  - PINRemoteImage/iOS (3.0.0-beta.8):
+    - PINRemoteImage/Core
+  - PINRemoteImage/PINCache (3.0.0-beta.8):
+    - PINCache (= 3.0.1-beta.4)
+    - PINRemoteImage/Core
   - pop (1.0.9)
   - PromiseKit (1.7.2):
     - PromiseKit/CALayer (= 1.7.2)
@@ -81,6 +102,7 @@ DEPENDENCIES:
   - AFNetworking (~> 3.0)
   - Aspects
   - ASProgressPopUpView
+  - AsyncDisplayKit
   - GPUImage
   - Masonry
   - MBProgressHUD (~> 1.0.0)
@@ -96,18 +118,22 @@ SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   ASProgressPopUpView: dfe44c9a0313ac93a8092bd361b59f52c83a7560
+  AsyncDisplayKit: 2234dd8d8770a5ed72936b3f8394bd5a807765f6
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   OMGHTTPURLRQ: c4268dea4295b585d711055dbcd87bfa82badd5f
+  PINCache: a89c8f609232afac77128557bd12c861844423d7
+  PINOperation: ac23db44796d4a564ecf9b5ea7163510f579b71d
+  PINRemoteImage: c4f9f16932840c597f32e69dd288e10e111a1929
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   PromiseKit: 102844c7b5ccff53f693e0710365c445d8df3871
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: b8ec31945bda6f7738cc7d87fd1ee7a116f90a7e
+PODFILE CHECKSUM: 2af879e83efc2c8c511b138c72ee623be62fcc61
 
 COCOAPODS: 1.1.1

@@ -17,4 +17,5 @@ target 'HHDemo' do
     pod 'PromiseKit', '~> 1.6'
     pod 'GPUImage'
     pod 'YYKit'
+    pod 'AsyncDisplayKit'
 end
