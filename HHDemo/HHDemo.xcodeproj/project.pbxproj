@@ -57,6 +57,7 @@
 		DA0FEAEF1E793E5400E542B3 /* HHHookTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0FEAEE1E793E5400E542B3 /* HHHookTool.m */; };
 		DA0FEAF21E79412700E542B3 /* UITableView+HHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0FEAF11E79412700E542B3 /* UITableView+HHExtension.m */; };
 		DA42EC2B1EB98F55003295BC /* VideoService.m in Sources */ = {isa = PBXBuildFile; fileRef = DA42EC2A1EB98F55003295BC /* VideoService.m */; };
+		DA71D6C21F0B6AD2000A2DC6 /* HHSortTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DA71D6C11F0B6AD2000A2DC6 /* HHSortTool.m */; };
 		DA81C9E91EB8279D00DA939B /* HHVideoEditListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA81C9E71EB8279D00DA939B /* HHVideoEditListVC.m */; };
 		DA81C9EE1EB828C500DA939B /* HHAddMusicVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA81C9EC1EB828C500DA939B /* HHAddMusicVC.m */; };
 		DA81C9EF1EB828C500DA939B /* HHAddMusicVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA81C9ED1EB828C500DA939B /* HHAddMusicVC.xib */; };
@@ -161,6 +162,8 @@
 		DA0FEAF11E79412700E542B3 /* UITableView+HHExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+HHExtension.m"; sourceTree = "<group>"; };
 		DA42EC291EB98F55003295BC /* VideoService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoService.h; sourceTree = "<group>"; };
 		DA42EC2A1EB98F55003295BC /* VideoService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoService.m; sourceTree = "<group>"; };
+		DA71D6C01F0B6AD2000A2DC6 /* HHSortTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHSortTool.h; sourceTree = "<group>"; };
+		DA71D6C11F0B6AD2000A2DC6 /* HHSortTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHSortTool.m; sourceTree = "<group>"; };
 		DA81C9E61EB8279D00DA939B /* HHVideoEditListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHVideoEditListVC.h; sourceTree = "<group>"; };
 		DA81C9E71EB8279D00DA939B /* HHVideoEditListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHVideoEditListVC.m; sourceTree = "<group>"; };
 		DA81C9EB1EB828C500DA939B /* HHAddMusicVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHAddMusicVC.h; sourceTree = "<group>"; };
@@ -542,6 +545,8 @@
 				DA0FEAEE1E793E5400E542B3 /* HHHookTool.m */,
 				4F65D3591E7978DD002C4555 /* HHLanguageTool.h */,
 				4F65D35A1E7978DD002C4555 /* HHLanguageTool.m */,
+				DA71D6C01F0B6AD2000A2DC6 /* HHSortTool.h */,
+				DA71D6C11F0B6AD2000A2DC6 /* HHSortTool.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -787,6 +792,7 @@
 				DA0FEADD1E79319300E542B3 /* HHDownLoadManager.m in Sources */,
 				DA0FEAF21E79412700E542B3 /* UITableView+HHExtension.m in Sources */,
 				4F21923F1DD36EA300D2ABFC /* HHMainNavVC.m in Sources */,
+				DA71D6C21F0B6AD2000A2DC6 /* HHSortTool.m in Sources */,
 				DA0FEAC11E79195D00E542B3 /* HHVC.m in Sources */,
 				DA0FEAE51E79389B00E542B3 /* UIApplication+HHExtension.m in Sources */,
 				DA0FEAE21E79345E00E542B3 /* UIView+HHExtension.m in Sources */,
