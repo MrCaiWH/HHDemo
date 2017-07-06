@@ -39,13 +39,13 @@
     printf("排序前:");
     [HHSortTool printArray:array];
     //快速排序
-    [HHSortTool quickSort:array low:0 high:6];
+//    [HHSortTool quickSort:array low:0 high:6];
     //冒泡排序
     //    [HHSortTool buddleSort:array];
     //选择排序
-    //    [HHSortTool selectSort:array];
+//        [HHSortTool selectSort:array];
     //插入排序
-//    [HHSortTool inserSort:array];
+    [HHSortTool inserSort:array];
     
     printf("排序后:");
     [HHSortTool printArray:array];

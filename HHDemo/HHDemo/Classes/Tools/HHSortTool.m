@@ -25,6 +25,10 @@
     int i = low;
     int j = high;
     
+    NSLog(@"come i=%d  j=%d  prmt=%@",i,j,prmt);
+    
+//    排序前:9 2 10 7 3 7 4 
+    
     //开始排序，使得left<prmt 同时right>prmt
     while (i <= j) {
         //        while ([array[i] compare:prmt] == NSOrderedAscending) {  该行与下一行作用相同
@@ -102,7 +106,7 @@
         return;
     }
     
-    for (int i = 0; i < array.count; i++) {
+    for (int i = 1; i < array.count; i++) {
         NSNumber *temp = array[i];
         int j = i-1;
         
