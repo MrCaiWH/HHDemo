@@ -18,4 +18,8 @@ target 'HHDemo' do
     pod 'GPUImage'
     pod 'YYKit'
     pod 'AsyncDisplayKit'
+    pod 'GDPerformanceView'
+    pod 'KMCGeigerCounter'
+    pod 'MLeaksFinder'
+    pod 'YTKNetwork'
 end
