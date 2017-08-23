@@ -8,6 +8,7 @@
 
 #import "HHMVVMViewController.h"
 #import "HHMVVMView.h"
+#import "HHPlayListApi.h"
 
 @interface HHMVVMViewController ()
 @property (nonatomic, strong) HHMVVMView *mvvmView;
@@ -31,6 +32,20 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     NSLog(@"%@",HHCurrentVC);
+    
+    HHPlayListApi *listApi = [[HHPlayListApi alloc] initWithOneDayOnePlay];
+    
+    [listApi startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest * _Nonnull request) {
+        
+        NSLog(@"%@",request.responseObject);
+        
+        NSLog(@"come here");
+        
+    } failure:^(__kindof YTKBaseRequest * _Nonnull request) {
+        
+        NSLog(@"%@",request.error);
+        
+    }];
 }
 
 - (HHMVVMView *)mvvmView {

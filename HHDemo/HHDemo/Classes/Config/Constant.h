@@ -17,6 +17,7 @@
 #import "MBProgressHUD+HHExtension.h"
 #import "UIColor+HHExtend.h"
 #import "HHLanguageTool.h"
+#import "HHApiInterface.h"
 // ------------------------------宏-------------------------
 //竖屏界面宽
 #define HHSCREEN_VERTICAL_WIDTH  MIN([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)

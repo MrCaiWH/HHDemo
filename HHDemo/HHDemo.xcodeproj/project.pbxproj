@@ -16,6 +16,8 @@
 		4F266BB61E799B4E0084D1E5 /* NSString+HHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F266BB51E799B4E0084D1E5 /* NSString+HHExtension.m */; };
 		4F27E66F1F4DA0EC003D75F3 /* HHThirdPartService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F27E66E1F4DA0EC003D75F3 /* HHThirdPartService.m */; };
 		4F27E67B1F4DAD1C003D75F3 /* HHLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F27E67A1F4DAD1C003D75F3 /* HHLocationManager.m */; };
+		4F27E6801F4DD11A003D75F3 /* HHPlayListApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F27E67F1F4DD11A003D75F3 /* HHPlayListApi.m */; };
+		4F27E6831F4DD2E2003D75F3 /* YTKNetworkAgent+HHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F27E6821F4DD2E2003D75F3 /* YTKNetworkAgent+HHExtension.m */; };
 		4F28962D1E82AE2C00006B6E /* HHNetStudyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F28962B1E82AE2C00006B6E /* HHNetStudyVC.m */; };
 		4F28962E1E82AE2C00006B6E /* HHNetStudyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F28962C1E82AE2C00006B6E /* HHNetStudyVC.xib */; };
 		4F54A0741E782AB4001A7BF2 /* NSString+HHHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F54A0731E782AB4001A7BF2 /* NSString+HHHash.m */; };
@@ -94,6 +96,11 @@
 		4F27E66E1F4DA0EC003D75F3 /* HHThirdPartService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHThirdPartService.m; sourceTree = "<group>"; };
 		4F27E6791F4DAD1C003D75F3 /* HHLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHLocationManager.h; sourceTree = "<group>"; };
 		4F27E67A1F4DAD1C003D75F3 /* HHLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHLocationManager.m; sourceTree = "<group>"; };
+		4F27E67D1F4DD0B1003D75F3 /* HHApiInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHApiInterface.h; sourceTree = "<group>"; };
+		4F27E67E1F4DD11A003D75F3 /* HHPlayListApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHPlayListApi.h; sourceTree = "<group>"; };
+		4F27E67F1F4DD11A003D75F3 /* HHPlayListApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHPlayListApi.m; sourceTree = "<group>"; };
+		4F27E6811F4DD2E2003D75F3 /* YTKNetworkAgent+HHExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YTKNetworkAgent+HHExtension.h"; sourceTree = "<group>"; };
+		4F27E6821F4DD2E2003D75F3 /* YTKNetworkAgent+HHExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "YTKNetworkAgent+HHExtension.m"; sourceTree = "<group>"; };
 		4F28962A1E82AE2C00006B6E /* HHNetStudyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHNetStudyVC.h; sourceTree = "<group>"; };
 		4F28962B1E82AE2C00006B6E /* HHNetStudyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHNetStudyVC.m; sourceTree = "<group>"; };
 		4F28962C1E82AE2C00006B6E /* HHNetStudyVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HHNetStudyVC.xib; sourceTree = "<group>"; };
@@ -304,6 +311,15 @@
 			path = Manger;
 			sourceTree = "<group>";
 		};
+		4F27E67C1F4DCD09003D75F3 /* NetApi */ = {
+			isa = PBXGroup;
+			children = (
+				4F27E67E1F4DD11A003D75F3 /* HHPlayListApi.h */,
+				4F27E67F1F4DD11A003D75F3 /* HHPlayListApi.m */,
+			);
+			path = NetApi;
+			sourceTree = "<group>";
+		};
 		4F2896251E82A3E900006B6E /* Net */ = {
 			isa = PBXGroup;
 			children = (
@@ -341,6 +357,8 @@
 				4F65D34C1E797539002C4555 /* UIColor+HHExtend.m */,
 				4F266BB41E799B4E0084D1E5 /* NSString+HHExtension.h */,
 				4F266BB51E799B4E0084D1E5 /* NSString+HHExtension.m */,
+				4F27E6811F4DD2E2003D75F3 /* YTKNetworkAgent+HHExtension.h */,
+				4F27E6821F4DD2E2003D75F3 /* YTKNetworkAgent+HHExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -349,6 +367,7 @@
 			isa = PBXGroup;
 			children = (
 				4F54A0761E7830C0001A7BF2 /* Constant.h */,
+				4F27E67D1F4DD0B1003D75F3 /* HHApiInterface.h */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -541,6 +560,7 @@
 		DA0FEAD61E79319300E542B3 /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				4F27E67C1F4DCD09003D75F3 /* NetApi */,
 				4F979DC31EA6620A00F4745F /* View */,
 				DA0FEAD71E79319300E542B3 /* Controller */,
 			);
@@ -793,6 +813,8 @@
 				4F2192391DD36E1900D2ABFC /* AppDelegate.m in Sources */,
 				4F65D3731E79945D002C4555 /* HHCustomUIVC.m in Sources */,
 				4F65D3491E795C7C002C4555 /* HHLanguageVC.m in Sources */,
+				4F27E6801F4DD11A003D75F3 /* HHPlayListApi.m in Sources */,
+				4F27E6831F4DD2E2003D75F3 /* YTKNetworkAgent+HHExtension.m in Sources */,
 				DA0FEAE81E793DD800E542B3 /* UIViewController+HHExtension.m in Sources */,
 				DA0FEADE1E79319300E542B3 /* HHEncodedVC.m in Sources */,
 				DA97F62C1E7A87B90049CA3F /* HHRedView.m in Sources */,
