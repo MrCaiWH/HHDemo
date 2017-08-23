@@ -14,6 +14,7 @@
 		4F21923F1DD36EA300D2ABFC /* HHMainNavVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F21923E1DD36EA300D2ABFC /* HHMainNavVC.m */; };
 		4F25FACD1E72E5F400E80326 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F25FACC1E72E5F400E80326 /* Launch Screen.storyboard */; };
 		4F266BB61E799B4E0084D1E5 /* NSString+HHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F266BB51E799B4E0084D1E5 /* NSString+HHExtension.m */; };
+		4F27E66F1F4DA0EC003D75F3 /* HHThirdPartService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F27E66E1F4DA0EC003D75F3 /* HHThirdPartService.m */; };
 		4F28962D1E82AE2C00006B6E /* HHNetStudyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F28962B1E82AE2C00006B6E /* HHNetStudyVC.m */; };
 		4F28962E1E82AE2C00006B6E /* HHNetStudyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F28962C1E82AE2C00006B6E /* HHNetStudyVC.xib */; };
 		4F54A0741E782AB4001A7BF2 /* NSString+HHHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F54A0731E782AB4001A7BF2 /* NSString+HHHash.m */; };
@@ -88,6 +89,8 @@
 		4F25FACC1E72E5F400E80326 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		4F266BB41E799B4E0084D1E5 /* NSString+HHExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HHExtension.h"; sourceTree = "<group>"; };
 		4F266BB51E799B4E0084D1E5 /* NSString+HHExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HHExtension.m"; sourceTree = "<group>"; };
+		4F27E66D1F4DA0EC003D75F3 /* HHThirdPartService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHThirdPartService.h; sourceTree = "<group>"; };
+		4F27E66E1F4DA0EC003D75F3 /* HHThirdPartService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHThirdPartService.m; sourceTree = "<group>"; };
 		4F28962A1E82AE2C00006B6E /* HHNetStudyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHNetStudyVC.h; sourceTree = "<group>"; };
 		4F28962B1E82AE2C00006B6E /* HHNetStudyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHNetStudyVC.m; sourceTree = "<group>"; };
 		4F28962C1E82AE2C00006B6E /* HHNetStudyVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HHNetStudyVC.xib; sourceTree = "<group>"; };
@@ -253,6 +256,7 @@
 			children = (
 				4F2192371DD36E1900D2ABFC /* AppDelegate.h */,
 				4F2192381DD36E1900D2ABFC /* AppDelegate.m */,
+				4F27E66C1F4DA0C1003D75F3 /* Manger */,
 				DA81C9F01EB82D4B00DA939B /* Resource */,
 				DA0B0EF71EA075C2003B4697 /* CustomUI */,
 				DA0FEAC51E79319300E542B3 /* Modules */,
@@ -284,6 +288,15 @@
 				DA0FEAC01E79195D00E542B3 /* HHVC.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		4F27E66C1F4DA0C1003D75F3 /* Manger */ = {
+			isa = PBXGroup;
+			children = (
+				4F27E66D1F4DA0EC003D75F3 /* HHThirdPartService.h */,
+				4F27E66E1F4DA0EC003D75F3 /* HHThirdPartService.m */,
+			);
+			path = Manger;
 			sourceTree = "<group>";
 		};
 		4F2896251E82A3E900006B6E /* Net */ = {
@@ -778,6 +791,7 @@
 				DA0FEAE81E793DD800E542B3 /* UIViewController+HHExtension.m in Sources */,
 				DA0FEADE1E79319300E542B3 /* HHEncodedVC.m in Sources */,
 				DA97F62C1E7A87B90049CA3F /* HHRedView.m in Sources */,
+				4F27E66F1F4DA0EC003D75F3 /* HHThirdPartService.m in Sources */,
 				4F21923C1DD36E6900D2ABFC /* HHMainVC.m in Sources */,
 				4F21921C1DD36CD000D2ABFC /* main.m in Sources */,
 				4F28962D1E82AE2C00006B6E /* HHNetStudyVC.m in Sources */,

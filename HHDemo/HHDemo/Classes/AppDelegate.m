@@ -9,8 +9,7 @@
 #import "AppDelegate.h"
 #import "HHMainVC.h"
 #import "HHMainNavVC.h"
-
-#import "HHSortTool.h"
+#import "YTKNetwork.h"
 
 @interface AppDelegate ()
 
@@ -33,22 +32,9 @@
     HHMainNavVC *navVC = [[HHMainNavVC alloc] initWithRootViewController:mainVC];
     self.window.rootViewController = navVC;
     
-    
-    NSMutableArray *array = [NSMutableArray arrayWithObjects:@9,@2,@10,@7,@3,@7,@4,nil];
-    
-    printf("排序前:");
-    [HHSortTool printArray:array];
-    //快速排序
-//    [HHSortTool quickSort:array low:0 high:6];
-    //冒泡排序
-    //    [HHSortTool buddleSort:array];
-    //选择排序
-//        [HHSortTool selectSort:array];
-    //插入排序
-    [HHSortTool inserSort:array];
-    
-    printf("排序后:");
-    [HHSortTool printArray:array];
+    // 程序刚一启动的时候 设置YTK的BaseUrl
+    YTKNetworkConfig *config = [YTKNetworkConfig sharedConfig];
+    config.baseUrl = @"https://www.abashow.com:8443";
 
     return YES;
 }
