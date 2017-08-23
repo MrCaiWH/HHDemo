@@ -22,4 +22,5 @@ target 'HHDemo' do
     pod 'KMCGeigerCounter'
     pod 'MLeaksFinder'
     pod 'YTKNetwork'
+    pod 'UITableView+FDTemplateLayoutCell'
 end
