@@ -7,6 +7,7 @@
 //
 
 #import "HHThirdPartService.h"
+#import <Bugly/Bugly.h>
 
 @implementation HHThirdPartService
 
@@ -14,7 +15,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         //异常检测，Crash收集
-//        [Bugly startWithAppId:@"005c4ad1be"];
+        [Bugly startWithAppId:@"005c4ad1be"];
         
         NSLog(@"第三方服务注册完毕");
     });

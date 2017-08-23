@@ -23,4 +23,5 @@ target 'HHDemo' do
     pod 'MLeaksFinder'
     pod 'YTKNetwork'
     pod 'UITableView+FDTemplateLayoutCell'
+    pod 'Bugly'
 end

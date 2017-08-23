@@ -23,6 +23,7 @@ PODS:
     - AsyncDisplayKit/Core
     - PINRemoteImage/iOS (= 3.0.0-beta.8)
     - PINRemoteImage/PINCache
+  - Bugly (2.4.8)
   - FBRetainCycleDetector (0.1.3)
   - GDPerformanceView (1.3.1)
   - GPUImage (0.1.7)
@@ -111,6 +112,7 @@ DEPENDENCIES:
   - Aspects
   - ASProgressPopUpView
   - AsyncDisplayKit
+  - Bugly
   - GDPerformanceView
   - GPUImage
   - KMCGeigerCounter
@@ -132,6 +134,7 @@ SPEC CHECKSUMS:
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   ASProgressPopUpView: dfe44c9a0313ac93a8092bd361b59f52c83a7560
   AsyncDisplayKit: 2234dd8d8770a5ed72936b3f8394bd5a807765f6
+  Bugly: da3c02408c14838d498429320545a8e439392978
   FBRetainCycleDetector: f0c7b290bf48ae77f6ae060843ce34ae341781eb
   GDPerformanceView: d70d646bf7022a3dfd64222e4966f403bfffef19
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
@@ -153,6 +156,6 @@ SPEC CHECKSUMS:
   YTKNetwork: c4b0c29c9d639dc050d475de69ee626d53eac598
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 641eb2ee40ab8b2cb931bde827f356c3037405fb
+PODFILE CHECKSUM: e4fd7a7362ca14e77c61ac837fd915840ed10c04
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.1
