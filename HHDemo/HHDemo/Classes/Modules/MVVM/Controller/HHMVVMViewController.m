@@ -28,6 +28,12 @@
     [self.view addSubview:self.mvvmView];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [self.viewModel.loadLatestDataCommand execute:nil];
+}
+
 - (void)updateViewConstraints {
     [self.mvvmView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.insets(UIEdgeInsetsZero);

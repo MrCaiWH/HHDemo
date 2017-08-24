@@ -32,7 +32,9 @@
 
 - (void)setModel:(HHPlayModel *)model {
     
+    _model = model;
     
+    self.textLabel.text = model.streamname;
 }
 
 @end
