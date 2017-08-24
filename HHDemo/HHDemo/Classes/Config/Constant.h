@@ -19,14 +19,11 @@
 #import "HHLanguageTool.h"
 #import "HHApiInterface.h"
 // ------------------------------宏-------------------------
-//竖屏界面宽
-#define HHSCREEN_VERTICAL_WIDTH  MIN([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)
-//竖屏界面高
-#define HHSCREEN_VERTICAL_HEIGHT MAX([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)
-//横屏界面宽
-#define HHSCREEN_HORIZONTAL_WIDTH  MAX([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)
-//横屏界面高
-#define HHSCREEN_HORIZONTAL_HEIGHT MIN([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)
+//界面宽
+#define HHSCREENWIDTH  [UIApplication sharedApplication].keyWindow.bounds.size.width
+//界面高
+#define HHSCREENHEIGHT [UIApplication sharedApplication].keyWindow.bounds.size.height
+
 //RGB色值
 #define HHColor(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
 //初始化Image

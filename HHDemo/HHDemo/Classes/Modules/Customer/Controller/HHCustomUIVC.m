@@ -46,7 +46,7 @@
 - (HHLoopView *)loopView {
     if (_loopView == nil) {
         _loopView = [[HHLoopView alloc] initWithFrame:CGRectMake(0, 100, 200, 30)];
-        _loopView.hh_centerX = HHSCREEN_VERTICAL_WIDTH / 2;
+        _loopView.hh_centerX = HHSCREENWIDTH / 2;
         [self.view addSubview:_loopView];
         _loopView.clipsToBounds = YES;
         _loopView.backgroundColor = [UIColor redColor];
@@ -59,7 +59,7 @@
     if (_sliderView == nil) {
         _sliderView = [[HHSliderView alloc] init];
         _sliderView.frame = CGRectMake(0, 200, 149, 57);
-        _sliderView.hh_centerX = HHSCREEN_VERTICAL_WIDTH / 2;
+        _sliderView.hh_centerX = HHSCREENWIDTH / 2;
     }
     return _sliderView;
 }
