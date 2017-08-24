@@ -219,15 +219,15 @@
     
     [self.player pause];
     
-    // 路径
-    NSString *documents = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
-    // 最终合成输出路径
-    NSString *outPutFilePath = [documents stringByAppendingPathComponent:@"watermark.mp4"];
-    // 添加合成路径
-    NSURL *outputFileUrl = [NSURL fileURLWithPath:outPutFilePath];
-    
-    // 视频来源
-    NSURL *videoInputUrl = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"20170418_162554944" ofType:@"mp4"]];
+//    // 路径
+//    NSString *documents = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
+//    // 最终合成输出路径
+//    NSString *outPutFilePath = [documents stringByAppendingPathComponent:@"watermark.mp4"];
+//    // 添加合成路径
+//    NSURL *outputFileUrl = [NSURL fileURLWithPath:outPutFilePath];
+//    
+//    // 视频来源
+//    NSURL *videoInputUrl = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"20170418_162554944" ofType:@"mp4"]];
 
     // mbp提示框
     [MBProgressHUD showStatusWithMessage:@"正在处理中"];
