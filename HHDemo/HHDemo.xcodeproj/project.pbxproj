@@ -73,6 +73,11 @@
 		DA97F6271E7A86E20049CA3F /* HHResponderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA97F6251E7A86E20049CA3F /* HHResponderVC.m */; };
 		DA97F6281E7A86E20049CA3F /* HHResponderVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA97F6261E7A86E20049CA3F /* HHResponderVC.xib */; };
 		DA97F62C1E7A87B90049CA3F /* HHRedView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA97F62B1E7A87B90049CA3F /* HHRedView.m */; };
+		DAF5D3C61F4E788F003530E3 /* HHMVVMViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF5D3C51F4E788F003530E3 /* HHMVVMViewModel.m */; };
+		DAF5D3CE1F4E7ED4003530E3 /* HHTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF5D3CD1F4E7ED4003530E3 /* HHTableViewCell.m */; };
+		DAF5D3D11F4E7FAF003530E3 /* HHPlayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF5D3D01F4E7FAF003530E3 /* HHPlayModel.m */; };
+		DAF5D3D41F4E7FD8003530E3 /* HHSysUserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF5D3D31F4E7FD8003530E3 /* HHSysUserInfoModel.m */; };
+		DAF5D3D71F4E821E003530E3 /* UIScrollView+HHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF5D3D61F4E821E003530E3 /* UIScrollView+HHExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -194,6 +199,17 @@
 		DA97F6261E7A86E20049CA3F /* HHResponderVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HHResponderVC.xib; sourceTree = "<group>"; };
 		DA97F62A1E7A87B90049CA3F /* HHRedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHRedView.h; sourceTree = "<group>"; };
 		DA97F62B1E7A87B90049CA3F /* HHRedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHRedView.m; sourceTree = "<group>"; };
+		DAF5D3C41F4E788F003530E3 /* HHMVVMViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHMVVMViewModel.h; sourceTree = "<group>"; };
+		DAF5D3C51F4E788F003530E3 /* HHMVVMViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHMVVMViewModel.m; sourceTree = "<group>"; };
+		DAF5D3CC1F4E7ED4003530E3 /* HHTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHTableViewCell.h; sourceTree = "<group>"; };
+		DAF5D3CD1F4E7ED4003530E3 /* HHTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHTableViewCell.m; sourceTree = "<group>"; };
+		DAF5D3CF1F4E7FAF003530E3 /* HHPlayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHPlayModel.h; sourceTree = "<group>"; };
+		DAF5D3D01F4E7FAF003530E3 /* HHPlayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHPlayModel.m; sourceTree = "<group>"; };
+		DAF5D3D21F4E7FD8003530E3 /* HHSysUserInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHSysUserInfoModel.h; sourceTree = "<group>"; };
+		DAF5D3D31F4E7FD8003530E3 /* HHSysUserInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHSysUserInfoModel.m; sourceTree = "<group>"; };
+		DAF5D3D51F4E821E003530E3 /* UIScrollView+HHExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+HHExtension.h"; sourceTree = "<group>"; };
+		DAF5D3D61F4E821E003530E3 /* UIScrollView+HHExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+HHExtension.m"; sourceTree = "<group>"; };
+		DAF5D3D91F4E83D4003530E3 /* HHViewModelConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHViewModelConstant.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -359,6 +375,8 @@
 				4F266BB51E799B4E0084D1E5 /* NSString+HHExtension.m */,
 				4F27E6811F4DD2E2003D75F3 /* YTKNetworkAgent+HHExtension.h */,
 				4F27E6821F4DD2E2003D75F3 /* YTKNetworkAgent+HHExtension.m */,
+				DAF5D3D51F4E821E003530E3 /* UIScrollView+HHExtension.h */,
+				DAF5D3D61F4E821E003530E3 /* UIScrollView+HHExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -436,6 +454,8 @@
 			children = (
 				4F979DC71EA6623100F4745F /* HHMVVMView.h */,
 				4F979DC81EA6623100F4745F /* HHMVVMView.m */,
+				DAF5D3CC1F4E7ED4003530E3 /* HHTableViewCell.h */,
+				DAF5D3CD1F4E7ED4003530E3 /* HHTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -560,6 +580,9 @@
 		DA0FEAD61E79319300E542B3 /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				DAF5D3D81F4E83A1003530E3 /* Constant */,
+				DAF5D3C21F4E719A003530E3 /* Model */,
+				DAF5D3C31F4E719A003530E3 /* ViewModel */,
 				4F27E67C1F4DCD09003D75F3 /* NetApi */,
 				4F979DC31EA6620A00F4745F /* View */,
 				DA0FEAD71E79319300E542B3 /* Controller */,
@@ -665,6 +688,34 @@
 				DA97F62B1E7A87B90049CA3F /* HHRedView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		DAF5D3C21F4E719A003530E3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DAF5D3CF1F4E7FAF003530E3 /* HHPlayModel.h */,
+				DAF5D3D01F4E7FAF003530E3 /* HHPlayModel.m */,
+				DAF5D3D21F4E7FD8003530E3 /* HHSysUserInfoModel.h */,
+				DAF5D3D31F4E7FD8003530E3 /* HHSysUserInfoModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DAF5D3C31F4E719A003530E3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DAF5D3C41F4E788F003530E3 /* HHMVVMViewModel.h */,
+				DAF5D3C51F4E788F003530E3 /* HHMVVMViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DAF5D3D81F4E83A1003530E3 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				DAF5D3D91F4E83D4003530E3 /* HHViewModelConstant.h */,
+			);
+			path = Constant;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -813,6 +864,7 @@
 				4F2192391DD36E1900D2ABFC /* AppDelegate.m in Sources */,
 				4F65D3731E79945D002C4555 /* HHCustomUIVC.m in Sources */,
 				4F65D3491E795C7C002C4555 /* HHLanguageVC.m in Sources */,
+				DAF5D3D71F4E821E003530E3 /* UIScrollView+HHExtension.m in Sources */,
 				4F27E6801F4DD11A003D75F3 /* HHPlayListApi.m in Sources */,
 				4F27E6831F4DD2E2003D75F3 /* YTKNetworkAgent+HHExtension.m in Sources */,
 				DA0FEAE81E793DD800E542B3 /* UIViewController+HHExtension.m in Sources */,
@@ -821,6 +873,7 @@
 				4F27E66F1F4DA0EC003D75F3 /* HHThirdPartService.m in Sources */,
 				4F27E67B1F4DAD1C003D75F3 /* HHLocationManager.m in Sources */,
 				4F21923C1DD36E6900D2ABFC /* HHMainVC.m in Sources */,
+				DAF5D3C61F4E788F003530E3 /* HHMVVMViewModel.m in Sources */,
 				4F21921C1DD36CD000D2ABFC /* main.m in Sources */,
 				4F28962D1E82AE2C00006B6E /* HHNetStudyVC.m in Sources */,
 				DA81CA011EB880D900DA939B /* HHAddWatermarkVC.m in Sources */,
@@ -829,6 +882,7 @@
 				4F266BB61E799B4E0084D1E5 /* NSString+HHExtension.m in Sources */,
 				DA81C9E91EB8279D00DA939B /* HHVideoEditListVC.m in Sources */,
 				4F65D3451E795BFD002C4555 /* HHInternationalizationVC.m in Sources */,
+				DAF5D3CE1F4E7ED4003530E3 /* HHTableViewCell.m in Sources */,
 				DA0FEADF1E79319300E542B3 /* HHMVVMViewController.m in Sources */,
 				DA0FEAEF1E793E5400E542B3 /* HHHookTool.m in Sources */,
 				DA0FEADD1E79319300E542B3 /* HHDownLoadManager.m in Sources */,
@@ -841,6 +895,8 @@
 				4F65D3401E795376002C4555 /* MBProgressHUD+HHExtension.m in Sources */,
 				4F65D36F1E7992F0002C4555 /* HHLoopView.m in Sources */,
 				4F65D35B1E7978DD002C4555 /* HHLanguageTool.m in Sources */,
+				DAF5D3D41F4E7FD8003530E3 /* HHSysUserInfoModel.m in Sources */,
+				DAF5D3D11F4E7FAF003530E3 /* HHPlayModel.m in Sources */,
 				DA0FEADB1E79319300E542B3 /* HHDownLoadVC.m in Sources */,
 				4F63680A1DD604DA0018BA48 /* ZOItem.m in Sources */,
 				DA81C9EE1EB828C500DA939B /* HHAddMusicVC.m in Sources */,

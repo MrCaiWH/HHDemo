@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class HHMVVMViewModel;
+
 @interface HHMVVMView : UIView
-@property (nonatomic, strong) RACSubject *subject;
+
+- (instancetype)initWithViewModel:(HHMVVMViewModel *)viewModel;
+
 @end

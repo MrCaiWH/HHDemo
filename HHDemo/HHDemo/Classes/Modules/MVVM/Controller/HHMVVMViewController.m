@@ -8,10 +8,13 @@
 
 #import "HHMVVMViewController.h"
 #import "HHMVVMView.h"
-#import "HHPlayListApi.h"
+#import "HHMVVMViewModel.h"
 
 @interface HHMVVMViewController ()
+
 @property (nonatomic, strong) HHMVVMView *mvvmView;
+
+@property (nonatomic, strong) HHMVVMViewModel *viewModel;
 @end
 
 @implementation HHMVVMViewController
@@ -25,37 +28,24 @@
     [self.view addSubview:self.mvvmView];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    NSLog(@"%@",HHCurrentVC);
-    
-    HHPlayListApi *listApi = [[HHPlayListApi alloc] initWithOneDayOnePlay];
-    
-    [listApi startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest * _Nonnull request) {
-        
-        NSLog(@"%@",request.responseObject);
-        
-        NSLog(@"come here");
-        
-    } failure:^(__kindof YTKBaseRequest * _Nonnull request) {
-        
-        NSLog(@"%@",request.error);
-        
+- (void)updateViewConstraints {
+    [self.mvvmView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.insets(UIEdgeInsetsZero);
     }];
+    [super updateViewConstraints];
 }
 
 - (HHMVVMView *)mvvmView {
     if (_mvvmView == nil) {
-        _mvvmView = [[HHMVVMView alloc] initWithFrame:CGRectMake(100, 100, 200, 100)];
-        _mvvmView.backgroundColor = [UIColor redColor];
-        [_mvvmView.subject subscribeNext:^(id x) {
-            NSLog(@"%s  %@",__func__,x);
-        }];
+        _mvvmView = [[HHMVVMView alloc] initWithViewModel:self.viewModel];
     }
     return _mvvmView;
+}
+
+- (HHMVVMViewModel *)viewModel {
+    if (_viewModel == nil) {
+        _viewModel = [[HHMVVMViewModel alloc] init];
+    }
+    return _viewModel;
 }
 @end

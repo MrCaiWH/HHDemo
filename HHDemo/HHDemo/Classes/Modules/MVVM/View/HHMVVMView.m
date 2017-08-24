@@ -7,52 +7,121 @@
 //
 
 #import "HHMVVMView.h"
+#import "HHMVVMViewModel.h"
+#import "HHTableViewCell.h"
+#import "UIScrollView+HHExtension.h"
+#import "HHViewModelConstant.h"
 
-@interface HHMVVMView ()
-@property (nonatomic, strong) UIButton *btn;
+@interface HHMVVMView ()<UITableViewDelegate, UITableViewDataSource>
+/**
+ viewmodel
+ */
+@property (nonatomic, strong) HHMVVMViewModel *viewModel;
+/**
+ 当前的tableview
+ */
+@property (strong, nonatomic) UITableView *tableView;
 @end
 
 @implementation HHMVVMView
 
-- (instancetype)initWithFrame:(CGRect)frame {
-    if (self = [super initWithFrame:frame]) {
-
-        [self addSubview:self.btn];
-
-        [self setNeedsUpdateConstraints];
-        [self updateConstraints];
+- (instancetype)initWithViewModel:(HHMVVMViewModel *)viewModel {
+    if (self = [super init]) {
+        self.viewModel = viewModel;
+        [self addSubview:self.tableView];
+        [self bindViewModel];
     }
     return self;
 }
 
--(void)updateConstraints
-{
-    [self.btn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.bottom.left.right.mas_equalTo(30);
+- (void)updateConstraints {
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.insets(UIEdgeInsetsZero);
     }];
-
     [super updateConstraints];
 }
 
-- (UIButton *)btn {
-    if (_btn == nil) {
-        _btn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_btn setTitle:@"点击我" forState:UIControlStateNormal];
-        [_btn setBackgroundColor:[UIColor greenColor]];
-        @weakify(self)
-        //起飞 降落
-        [[_btn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
-            @strongify(self)
-            [self.subject sendNext:@"hello"];
-        }];
-    }
-    return _btn;
+- (void)bindViewModel
+{
+    [self.tableView hh_beginRefreshing];
+    @weakify(self)
+    [[self.viewModel.refreshEndSubject delay:0.5] subscribeNext:^(id x) {
+        @strongify(self);
+        [self.tableView reloadData];
+        switch ([x integerValue])
+        {
+            case HHHeaderRefresh_HasMoreData:
+            {
+                [self.tableView hh_endRefreshing];
+                self.tableView.mj_footer.hidden = NO;
+                break;
+            }
+            case HHHeaderRefresh_NoMoreData:
+            {
+                [self.tableView hh_endRefreshing];
+                [self.tableView.mj_footer endRefreshingWithNoMoreData];
+                if(self.viewModel.dataArrayCount == 0)
+                {
+                    self.tableView.mj_footer.hidden = YES;
+                }
+                else
+                {
+                    self.tableView.mj_footer.hidden = NO;
+                }
+                break;
+            }
+            case HHFooterRefresh_HasMoreData:
+            {
+                [self.tableView.mj_footer endRefreshing];
+                break;
+            }
+            case HHFooterRefresh_NoMoreData:
+            {
+                [self.tableView.mj_footer endRefreshingWithNoMoreData];
+                break;
+            }
+            case HHRefreshError:
+            {
+                [self.tableView hh_endRefreshing];
+                [self.tableView.mj_footer endRefreshing];
+                break;
+            }
+        }
+    }];
 }
 
-- (RACSubject *)subject {
-    if (_subject == nil) {
-        _subject = [RACSubject subject];
-    }
-    return _subject;
+#pragma mark - UITableViewDataSource
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.viewModel.dataArray.count;
 }
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    HHTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[HHTableViewCell identifier]];
+    cell.model = [self.viewModel.dataArray objectAtIndex:indexPath.row];
+    return cell;
+}
+
+
+- (UITableView *)tableView {
+    if (!_tableView) {
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, HHSCREENWIDTH, HHSCREENHEIGHT - 64) style:UITableViewStylePlain];
+        _tableView.dataSource = self;
+        _tableView.delegate = self;
+//        _tableView.tableHeaderView = [self liveHeaderView];
+        _tableView.tableFooterView = [UIView new];
+        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        [_tableView registerClass:[HHTableViewCell class] forCellReuseIdentifier:[HHTableViewCell identifier]];
+        @weakify(self)
+        [_tableView hh_headerWithRefreshingBlock:^{
+            @strongify(self)
+            [self.viewModel.loadLatestDataCommand execute:nil];
+        }];
+        [_tableView hh_footerWithRefreshingBlock:^{
+            @strongify(self)
+            [self.viewModel.loadMoreDataCommand execute:nil];
+        }];
+    }
+    return _tableView;
+}
+
 @end
