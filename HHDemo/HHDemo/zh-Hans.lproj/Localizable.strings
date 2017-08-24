@@ -6,3 +6,9 @@
   Copyright © 2017年 黄花菜. All rights reserved.
 */
 "Sure" = "确定";
+
+"Album_Refresh_TitlePulling" = "松开立即刷新";
+"Album_Refresh_FooterTitleIdle" = "上拉加载更多";
+"Album_Refresh_FooterTitleRefreshing" = "正在加载更多数据中...";
+"Album_Refresh_HeaderTitleIdle" = "下拉可以刷新";
+"Album_Refresh_HeaderTitleRefreshing" = "正在刷新数据中...";

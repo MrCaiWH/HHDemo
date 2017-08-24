@@ -25,6 +25,10 @@
 
 @implementation HHMVVMView
 
++(BOOL)requiresConstraintBasedLayout {
+    return YES;
+}
+
 - (instancetype)initWithViewModel:(HHMVVMViewModel *)viewModel {
     if (self = [super init]) {
         self.viewModel = viewModel;
@@ -100,7 +104,6 @@
     cell.model = [self.viewModel.dataArray objectAtIndex:indexPath.row];
     return cell;
 }
-
 
 - (UITableView *)tableView {
     if (!_tableView) {
