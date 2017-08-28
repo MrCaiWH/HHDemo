@@ -25,4 +25,5 @@ target 'HHDemo' do
     pod 'UITableView+FDTemplateLayoutCell'
     pod 'Bugly'
     pod 'OHHTTPStubs'
+    pod 'FMDB'
 end
