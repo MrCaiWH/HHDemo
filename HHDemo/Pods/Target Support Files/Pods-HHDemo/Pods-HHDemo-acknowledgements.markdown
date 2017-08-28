@@ -1043,6 +1043,11 @@ SOFTWARE.
 
 
 
+## UMengUShare
+
+Copyright 2011 - 2017 UMeng.com. All rights reserved.
+
+
 ## YTKNetwork
 
 Copyright (c) 2012-2016 YTKNetwork https://github.com/yuantiku

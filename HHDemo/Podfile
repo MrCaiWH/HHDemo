@@ -26,4 +26,7 @@ target 'HHDemo' do
     pod 'Bugly'
     pod 'OHHTTPStubs'
     pod 'FMDB'
+    
+    # 集成微信(完整版14.4M)
+    pod 'UMengUShare/Social/WeChat'
 end
