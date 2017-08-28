@@ -24,4 +24,5 @@ target 'HHDemo' do
     pod 'YTKNetwork'
     pod 'UITableView+FDTemplateLayoutCell'
     pod 'Bugly'
+    pod 'OHHTTPStubs'
 end
