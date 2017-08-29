@@ -60,6 +60,7 @@
 		DA0FEAE81E793DD800E542B3 /* UIViewController+HHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0FEAE71E793DD800E542B3 /* UIViewController+HHExtension.m */; };
 		DA0FEAEF1E793E5400E542B3 /* HHHookTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0FEAEE1E793E5400E542B3 /* HHHookTool.m */; };
 		DA0FEAF21E79412700E542B3 /* UITableView+HHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0FEAF11E79412700E542B3 /* UITableView+HHExtension.m */; };
+		DA236AAD1F54F4B600664E0A /* HHMockHttpUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DA236AAC1F54F4B600664E0A /* HHMockHttpUtil.m */; };
 		DA42EC2B1EB98F55003295BC /* VideoService.m in Sources */ = {isa = PBXBuildFile; fileRef = DA42EC2A1EB98F55003295BC /* VideoService.m */; };
 		DA71D6C21F0B6AD2000A2DC6 /* HHSortTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DA71D6C11F0B6AD2000A2DC6 /* HHSortTool.m */; };
 		DA81C9E91EB8279D00DA939B /* HHVideoEditListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA81C9E71EB8279D00DA939B /* HHVideoEditListVC.m */; };
@@ -178,6 +179,8 @@
 		DA0FEAEE1E793E5400E542B3 /* HHHookTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHHookTool.m; sourceTree = "<group>"; };
 		DA0FEAF01E79412700E542B3 /* UITableView+HHExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+HHExtension.h"; sourceTree = "<group>"; };
 		DA0FEAF11E79412700E542B3 /* UITableView+HHExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+HHExtension.m"; sourceTree = "<group>"; };
+		DA236AAB1F54F4B600664E0A /* HHMockHttpUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHMockHttpUtil.h; sourceTree = "<group>"; };
+		DA236AAC1F54F4B600664E0A /* HHMockHttpUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHMockHttpUtil.m; sourceTree = "<group>"; };
 		DA42EC291EB98F55003295BC /* VideoService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoService.h; sourceTree = "<group>"; };
 		DA42EC2A1EB98F55003295BC /* VideoService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoService.m; sourceTree = "<group>"; };
 		DA71D6C01F0B6AD2000A2DC6 /* HHSortTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHSortTool.h; sourceTree = "<group>"; };
@@ -282,6 +285,7 @@
 			children = (
 				4F2192371DD36E1900D2ABFC /* AppDelegate.h */,
 				4F2192381DD36E1900D2ABFC /* AppDelegate.m */,
+				DA236AAA1F54F4A100664E0A /* MockHttp */,
 				4F27E66C1F4DA0C1003D75F3 /* Manger */,
 				DA81C9F01EB82D4B00DA939B /* Resource */,
 				DA0B0EF71EA075C2003B4697 /* CustomUI */,
@@ -612,6 +616,15 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
+		DA236AAA1F54F4A100664E0A /* MockHttp */ = {
+			isa = PBXGroup;
+			children = (
+				DA236AAB1F54F4B600664E0A /* HHMockHttpUtil.h */,
+				DA236AAC1F54F4B600664E0A /* HHMockHttpUtil.m */,
+			);
+			path = MockHttp;
+			sourceTree = "<group>";
+		};
 		DA81C9E41EB8274500DA939B /* VideoEdit */ = {
 			isa = PBXGroup;
 			children = (
@@ -865,6 +878,7 @@
 				4F65D3731E79945D002C4555 /* HHCustomUIVC.m in Sources */,
 				4F65D3491E795C7C002C4555 /* HHLanguageVC.m in Sources */,
 				DAF5D3D71F4E821E003530E3 /* UIScrollView+HHExtension.m in Sources */,
+				DA236AAD1F54F4B600664E0A /* HHMockHttpUtil.m in Sources */,
 				4F27E6801F4DD11A003D75F3 /* HHPlayListApi.m in Sources */,
 				4F27E6831F4DD2E2003D75F3 /* YTKNetworkAgent+HHExtension.m in Sources */,
 				DA0FEAE81E793DD800E542B3 /* UIViewController+HHExtension.m in Sources */,
