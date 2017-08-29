@@ -14,6 +14,8 @@
  请求完成预处理
  */
 - (void)requestCompletePreprocessor {
+    [super requestCompletePreprocessor];
+    
     NSLog(@"%s",__func__);
 }
 
