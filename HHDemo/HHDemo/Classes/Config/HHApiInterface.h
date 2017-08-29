@@ -12,4 +12,6 @@
 // 一天一播中的 直播回放
 #define ABA_LIVE_PLAY_BACK_URL @"/userLive/queryUserLiveForHistory"
 
+#define kUserLogin              @"sign/login"           //登录
+
 #endif /* HHApiInterface_h */

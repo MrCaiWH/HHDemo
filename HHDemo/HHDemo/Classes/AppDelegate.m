@@ -10,6 +10,7 @@
 #import "HHMainVC.h"
 #import "HHMainNavVC.h"
 #import "YTKNetwork.h"
+#import <AFNetworking/AFNetworking.h>
 
 @interface AppDelegate ()
 
@@ -32,9 +33,29 @@
     HHMainNavVC *navVC = [[HHMainNavVC alloc] initWithRootViewController:mainVC];
     self.window.rootViewController = navVC;
     
-    // 程序刚一启动的时候 设置YTK的BaseUrl
+    
+    NSLog(@"%@",NSHomeDirectory());
+    
+    
+    // 配置安全模式
     YTKNetworkConfig *config = [YTKNetworkConfig sharedConfig];
-    config.baseUrl = @"https://www.abashow.com:8443";
+    config.baseUrl = @"https://dobbyapi.zerotech.com";
+    config.cdnUrl = @"https://test-dobbyh5.zerotech.com";
+
+    
+    NSString *cerPath = [[NSBundle mainBundle] pathForResource:@"zerotech" ofType:@"cer"];
+    NSData *certData = [NSData dataWithContentsOfFile:cerPath];
+    
+    // 验证公钥和证书的其他信息
+    AFSecurityPolicy *securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModePublicKey];
+    // 允许自建证书
+    securityPolicy.allowInvalidCertificates = YES;
+    // 校验域名信息
+    securityPolicy.validatesDomainName = YES;
+    // 添加服务器证书,单向验证;  可采用双证书 双向验证;
+    securityPolicy.pinnedCertificates = [NSSet setWithObject:certData];
+    
+    [config setSecurityPolicy:securityPolicy];
 
     return YES;
 }
