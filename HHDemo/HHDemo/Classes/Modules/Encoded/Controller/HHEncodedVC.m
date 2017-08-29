@@ -23,6 +23,22 @@
     
     self.title = @"编码";
     
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    
+    [manager.requestSerializer setValue:@"1-2-2.2.1-1-99" forHTTPHeaderField:@"v"];
+
+    NSString *url = [@"https://dobbyapi.zerotech.com" stringByAppendingPathComponent:[NSString stringWithFormat:@"sign/login"]];
+    
+    NSDictionary *parameters = @{ @"phone" : @"18811108252", @"password" :@"11111111"};
+    
+    [manager POST:url parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        NSLog(@"responseObject %@",responseObject);
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+
+        NSLog(@"error %@",error);
+    }];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
