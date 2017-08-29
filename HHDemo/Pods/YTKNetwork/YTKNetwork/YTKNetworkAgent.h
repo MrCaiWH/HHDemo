@@ -41,9 +41,17 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)addRequest:(YTKBaseRequest *)request;
 
 ///  Cancel a request that was previously added.
+/**
+ 取消某个request
+
+ @param request request
+ */
 - (void)cancelRequest:(YTKBaseRequest *)request;
 
 ///  Cancel all requests that were previously added.
+/**
+ 取消所有添加的request
+ */
 - (void)cancelAllRequests;
 
 ///  Return the constructed URL of request.

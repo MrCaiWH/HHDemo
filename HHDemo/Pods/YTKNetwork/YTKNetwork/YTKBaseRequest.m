@@ -92,6 +92,7 @@ NSString *const YTKRequestValidationErrorDomain = @"com.yuantiku.request.validat
 
 - (void)clearCompletionBlock {
     // nil out to break the retain cycle.
+    // 清空请求结束的block，避免循环引用
     self.successCompletionBlock = nil;
     self.failureCompletionBlock = nil;
 }
@@ -106,14 +107,20 @@ NSString *const YTKRequestValidationErrorDomain = @"com.yuantiku.request.validat
 #pragma mark - Request Action
 
 - (void)start {
+    //1. 告诉Accessories即将回调了（其实是即将发起请求）
     [self toggleAccessoriesWillStartCallBack];
+    //2. 令agent添加请求并发起请求，在这里并不是组合关系，agent只是一个单例
     [[YTKNetworkAgent sharedAgent] addRequest:self];
 }
 
 - (void)stop {
+    //告诉Accessories将要回调了
     [self toggleAccessoriesWillStopCallBack];
+    //清空代理
     self.delegate = nil;
+    //调用agent的取消某个request的方法
     [[YTKNetworkAgent sharedAgent] cancelRequest:self];
+    //告诉Accessories回调完成了
     [self toggleAccessoriesDidStopCallBack];
 }
 

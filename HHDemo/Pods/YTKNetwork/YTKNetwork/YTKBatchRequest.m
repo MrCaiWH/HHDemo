@@ -37,8 +37,11 @@
 - (instancetype)initWithRequestArray:(NSArray<YTKRequest *> *)requestArray {
     self = [super init];
     if (self) {
+        //保存为属性
         _requestArray = [requestArray copy];
+        //批量请求完成的数量初始化为0
         _finishedCount = 0;
+        //类型检查，所有元素都必须为YTKRequest或的它的子类，否则强制初始化失败
         for (YTKRequest * req in _requestArray) {
             if (![req isKindOfClass:[YTKRequest class]]) {
                 YTKLog(@"Error, request item must be YTKRequest instance.");
@@ -50,13 +53,19 @@
 }
 
 - (void)start {
+    //如果batch里第一个请求已经成功结束，则不能再start
     if (_finishedCount > 0) {
         YTKLog(@"Error! Batch request has already started.");
         return;
     }
+    //最开始设定失败的request为nil
     _failedRequest = nil;
+    
+    //使用YTKBatchRequestAgent来管理当前的批量请求
     [[YTKBatchRequestAgent sharedAgent] addBatchRequest:self];
     [self toggleAccessoriesWillStartCallBack];
+    
+    //遍历所有request，并开始请求
     for (YTKRequest * req in _requestArray) {
         req.delegate = self;
         [req clearCompletionBlock];
@@ -108,39 +117,55 @@
 #pragma mark - Network Request Delegate
 
 - (void)requestFinished:(YTKRequest *)request {
+    //某个request成功后，首先让_finishedCount + 1
     _finishedCount++;
+    
+    //如果_finishedCount等于_requestArray的个数，则判定当前batch请求成功
     if (_finishedCount == _requestArray.count) {
+        //调用即将结束的代理
         [self toggleAccessoriesWillStopCallBack];
+        //调用请求成功的代理
         if ([_delegate respondsToSelector:@selector(batchRequestFinished:)]) {
             [_delegate batchRequestFinished:self];
         }
+        //调用批量请求成功的block
         if (_successCompletionBlock) {
             _successCompletionBlock(self);
         }
+        //清空成功和失败的block
         [self clearCompletionBlock];
+        //调用请求结束的代理
         [self toggleAccessoriesDidStopCallBack];
+        //从YTKBatchRequestAgent里移除当前的batch
         [[YTKBatchRequestAgent sharedAgent] removeBatchRequest:self];
     }
 }
 
 - (void)requestFailed:(YTKRequest *)request {
     _failedRequest = request;
+    //调用即将结束的代理
     [self toggleAccessoriesWillStopCallBack];
     // Stop
+    //停止batch里所有的请求
     for (YTKRequest *req in _requestArray) {
         [req stop];
     }
     // Callback
+    //调用请求失败的代理
     if ([_delegate respondsToSelector:@selector(batchRequestFailed:)]) {
         [_delegate batchRequestFailed:self];
     }
+    //调用请求失败的block
     if (_failureCompletionBlock) {
         _failureCompletionBlock(self);
     }
     // Clear
+    //清空成功和失败的block
     [self clearCompletionBlock];
 
+    //调用请求结束的代理
     [self toggleAccessoriesDidStopCallBack];
+    //从YTKBatchRequestAgent里移除当前的batch
     [[YTKBatchRequestAgent sharedAgent] removeBatchRequest:self];
 }
 

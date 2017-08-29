@@ -97,6 +97,7 @@ typedef void(^YTKRequestCompletionBlock)(__kindof YTKBaseRequest *request);
 ///  used to track the status of a request. Objects that conforms this protocol
 ///  ("accessories") can perform additional configurations accordingly. All the
 ///  accessory methods will be called on the main queue.
+//用来跟踪请求的状态的代理
 @protocol YTKRequestAccessory <NSObject>
 
 @optional
