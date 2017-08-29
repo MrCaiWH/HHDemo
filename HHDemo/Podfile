@@ -21,7 +21,7 @@ target 'HHDemo' do
     pod 'GDPerformanceView'
     pod 'KMCGeigerCounter'
     pod 'MLeaksFinder'
-    pod 'YTKNetwork'
+    pod 'YTKNetwork', '~> 2.0.3'
     pod 'UITableView+FDTemplateLayoutCell'
     pod 'Bugly'
     pod 'OHHTTPStubs'
