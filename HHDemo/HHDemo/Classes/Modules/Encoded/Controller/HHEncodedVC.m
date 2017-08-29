@@ -11,6 +11,8 @@
 
 #import <AFNetworking/AFNetworking.h>
 
+#import <SafariServices/SafariServices.h>
+
 @interface HHEncodedVC ()
 
 @end
@@ -21,7 +23,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.title = @"编码";
+    self.title = @"YTKNetWork";
     
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     
@@ -53,6 +55,13 @@
         
         NSLog(@"request.error  %@",request.error);
     }];
+}
+
+- (void)p_skiph5Page {
+    NSString *cn = [NSString stringWithFormat:@"%@/html/termsOfService/service_cn.html", @"https://test-dobbyh5.zerotech.com"];
+    
+    SFSafariViewController *vc = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:cn]];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 @end
