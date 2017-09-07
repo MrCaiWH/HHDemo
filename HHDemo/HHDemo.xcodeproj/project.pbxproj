@@ -914,6 +914,7 @@
 		4F21920F1DD36CCF00D2ABFC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = HH;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "黄花菜";
 				TargetAttributes = {
