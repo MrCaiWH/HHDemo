@@ -11,7 +11,22 @@
 
 //限定以下引用只能被OC代码使用
 #ifdef __OBJC__
-    #import "Constant.h"
+
+    //第三方
+    #import "Masonry.h"
+    #import "ReactiveCocoa.h"
+
+    //基础类
+    #import "UIView+HHExtension.h"
+    #import "UIApplication+HHExtension.h"
+    #import "MBProgressHUD+HHExtension.h"
+    #import "UIColor+HHExtend.h"
+    #import "HHLanguageTool.h"
+
+    //全局宏
+    #import "HHURLMacros.h"
+    #import "HHUtilsMacros.h"
+
 #endif
 
 #endif /* PrefixHeader_pch */

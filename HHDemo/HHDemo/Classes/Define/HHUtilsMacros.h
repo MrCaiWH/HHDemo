@@ -1,23 +1,14 @@
 //
-//  Constant.h
+//  HHUtilsMacros.h
 //  HHDemo
 //
-//  Created by 蔡万鸿 on 2017/3/14.
+//  Created by 蔡万鸿 on 2017/9/7.
 //  Copyright © 2017年 黄花菜. All rights reserved.
 //
 
-#ifndef Constant_h
-#define Constant_h
+#ifndef HHUtilsMacros_h
+#define HHUtilsMacros_h
 
-// ------------------------------头文件-------------------------
-#import "Masonry.h"
-#import "ReactiveCocoa.h"
-#import "UIView+HHExtension.h"
-#import "UIApplication+HHExtension.h"
-#import "MBProgressHUD+HHExtension.h"
-#import "UIColor+HHExtend.h"
-#import "HHLanguageTool.h"
-#import "HHApiInterface.h"
 // ------------------------------宏-------------------------
 //界面宽
 #define HHSCREENWIDTH  [UIApplication sharedApplication].keyWindow.bounds.size.width
@@ -48,4 +39,4 @@ fprintf(stderr, "-------\n");                                               \
 #define NSLog(...)
 #endif
 
-#endif /* Constant_h */
+#endif /* HHUtilsMacros_h */
