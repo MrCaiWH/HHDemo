@@ -10,7 +10,7 @@
 
 @interface HHLocationManager : NSObject
 
-+ (instancetype)ShareLocation;
++ (instancetype)shareLocation;
 
 /**
  *  经度

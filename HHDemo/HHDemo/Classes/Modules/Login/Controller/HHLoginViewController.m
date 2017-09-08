@@ -7,6 +7,7 @@
 //
 
 #import "HHLoginViewController.h"
+#import "HHUserManager.h"
 
 @interface HHLoginViewController ()
 
@@ -22,11 +23,23 @@
 
 - (IBAction)WeChatLogin:(UIButton *)sender {
     
-    
+    [KUserManager login:HHUserLoginTypeWeChat completion:^(BOOL success, NSString *des) {
+        if (success) {
+            NSLog(@"登录成功");
+        }else{
+            NSLog(@"登录失败：%@", des);
+        }
+    }];
 }
 
 - (IBAction)QQLogin:(UIButton *)sender {
     
-    
+    [KUserManager login:HHUserLoginTypeQQ completion:^(BOOL success, NSString *des) {
+        if (success) {
+            NSLog(@"登录成功");
+        }else{
+            NSLog(@"登录失败：%@", des);
+        }
+    }];
 }
 @end

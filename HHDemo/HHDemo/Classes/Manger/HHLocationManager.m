@@ -18,7 +18,7 @@
 
 @implementation HHLocationManager
 
-+ (instancetype)ShareLocation {
++ (instancetype)shareLocation {
     static HHLocationManager *manager = nil;
     static dispatch_once_t oneceToken;
     dispatch_once(&oneceToken, ^{
