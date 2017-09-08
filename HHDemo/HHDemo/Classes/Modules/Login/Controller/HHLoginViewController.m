@@ -7,7 +7,6 @@
 //
 
 #import "HHLoginViewController.h"
-#import <UMSocialCore/UMSocialCore.h>
 
 @interface HHLoginViewController ()
 

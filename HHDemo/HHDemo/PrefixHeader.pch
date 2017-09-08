@@ -26,6 +26,7 @@
     //全局宏
     #import "HHURLMacros.h"
     #import "HHUtilsMacros.h"
+    #import "HHThirdMacros.h"
 
 #endif
 
