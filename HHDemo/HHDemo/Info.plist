@@ -23,6 +23,26 @@
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
 			<string>weixin</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>wx38ae805374bd9c73</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>QQ41ee5b06</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>tencent1106139910</string>
+			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>

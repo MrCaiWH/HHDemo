@@ -7,10 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "HHMainVC.h"
-#import "HHMainNavVC.h"
-#import "YTKNetwork.h"
-#import <AFNetworking/AFNetworking.h>
+#import "AppDelegate+HHAppService.h"
 
 @interface AppDelegate ()
 
@@ -20,25 +17,15 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
 
-    NSLog(@"%@",NSHomeDirectory());
+    //1.初始化window
+    [self initWindow];
     
-    // 1.创建window
-    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.backgroundColor = [UIColor whiteColor];
-    // 2.显示window
-    [self.window makeKeyAndVisible];
+    //2.初始化网络请求框架
+    [self initYTKNetwork];
     
-    // 3.显示默认界面
-    HHMainVC *mainVC = [[HHMainVC alloc] init];
-    HHMainNavVC *navVC = [[HHMainNavVC alloc] initWithRootViewController:mainVC];
-    self.window.rootViewController = navVC;
-    
-    // 配置安全模式
-    YTKNetworkConfig *config = [YTKNetworkConfig sharedConfig];
-    config.baseUrl = @"https://dobbyapi.zerotech.com";
-    config.cdnUrl = @"https://test-dobbyh5.zerotech.com";
+    //3.初始化友盟
+    [self initUMeng];
 
     return YES;
 }

@@ -16,9 +16,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
-    self.title = @"登录";
+    // Do any additional setup after loading the view from its nib.
 }
 
+
+- (IBAction)WeChatLogin:(UIButton *)sender {
+    
+    
+}
+
+- (IBAction)QQLogin:(UIButton *)sender {
+    
+    
+}
 @end
