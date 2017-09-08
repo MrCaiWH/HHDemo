@@ -41,6 +41,7 @@
 		4F33F6461F6246B3004F4402 /* HHImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F33F63B1F6246B3004F4402 /* HHImageViewController.xib */; };
 		4F33F6471F6246B3004F4402 /* HHMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F33F63D1F6246B3004F4402 /* HHMainVC.m */; };
 		4F33F6481F6246B3004F4402 /* ZOItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F33F6401F6246B3004F4402 /* ZOItem.m */; };
+		4F33F64D1F624828004F4402 /* HHLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F33F64C1F624828004F4402 /* HHLoginViewController.m */; };
 		4F65D3451E795BFD002C4555 /* HHInternationalizationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F65D3441E795BFD002C4555 /* HHInternationalizationVC.m */; };
 		4F65D3491E795C7C002C4555 /* HHLanguageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F65D3471E795C7C002C4555 /* HHLanguageVC.m */; };
 		4F65D34A1E795C7C002C4555 /* HHLanguageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F65D3481E795C7C002C4555 /* HHLanguageVC.xib */; };
@@ -163,6 +164,8 @@
 		4F33F63D1F6246B3004F4402 /* HHMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHMainVC.m; sourceTree = "<group>"; };
 		4F33F63F1F6246B3004F4402 /* ZOItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZOItem.h; sourceTree = "<group>"; };
 		4F33F6401F6246B3004F4402 /* ZOItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZOItem.m; sourceTree = "<group>"; };
+		4F33F64B1F624828004F4402 /* HHLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHLoginViewController.h; sourceTree = "<group>"; };
+		4F33F64C1F624828004F4402 /* HHLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHLoginViewController.m; sourceTree = "<group>"; };
 		4F65D3431E795BFD002C4555 /* HHInternationalizationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHInternationalizationVC.h; sourceTree = "<group>"; };
 		4F65D3441E795BFD002C4555 /* HHInternationalizationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHInternationalizationVC.m; sourceTree = "<group>"; };
 		4F65D3461E795C7C002C4555 /* HHLanguageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHLanguageVC.h; sourceTree = "<group>"; };
@@ -539,6 +542,23 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		4F33F6491F62480E004F4402 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4F33F64A1F62480E004F4402 /* Controller */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4F33F64A1F62480E004F4402 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4F33F64B1F624828004F4402 /* HHLoginViewController.h */,
+				4F33F64C1F624828004F4402 /* HHLoginViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		4F65D3411E795BA9002C4555 /* Internationalization */ = {
 			isa = PBXGroup;
 			children = (
@@ -633,6 +653,7 @@
 		DA0FEAC51E79319300E542B3 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				4F33F6491F62480E004F4402 /* Login */,
 				4F33F62D1F6246B3004F4402 /* Customer */,
 				4F33F6371F6246B3004F4402 /* Main */,
 				DA81C9E41EB8274500DA939B /* VideoEdit */,
@@ -997,6 +1018,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA42EC2B1EB98F55003295BC /* VideoService.m in Sources */,
+				4F33F64D1F624828004F4402 /* HHLoginViewController.m in Sources */,
 				DA0FEADA1E79319300E542B3 /* HHAnimationVC.m in Sources */,
 				DA97F6271E7A86E20049CA3F /* HHResponderVC.m in Sources */,
 				4F979DC91EA6623100F4745F /* HHMVVMView.m in Sources */,

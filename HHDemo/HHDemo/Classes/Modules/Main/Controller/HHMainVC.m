@@ -18,6 +18,7 @@
 #import "HHResponderVC.h"
 #import "HHNetStudyVC.h"
 #import "HHVideoEditListVC.h"
+#import "HHLoginViewController.h"
 
 static NSString *const cellIdentifier =@"cellIdentifier";
 
@@ -69,6 +70,9 @@ static NSString *const cellIdentifier =@"cellIdentifier";
     
     ZOItem *item9 = [[ZOItem alloc] initWithTitle:@"视频编辑" targetVc:[HHVideoEditListVC class]];
     [self.dataArray addObject:item9];
+    
+    ZOItem *item10 = [[ZOItem alloc] initWithTitle:@"登录" targetVc:[HHLoginViewController class]];
+    [self.dataArray addObject:item10];
 }
 
 #pragma mark - 数据源方法
