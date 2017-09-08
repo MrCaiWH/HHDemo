@@ -120,8 +120,18 @@ PODS:
   - UMengUShare/Core (6.4.5):
     - UMengUShare/Network
   - UMengUShare/Network (6.4.5)
+  - UMengUShare/Social/QQ (6.4.5):
+    - UMengUShare/Core
+    - UMengUShare/Social/ReducedQQ
+  - UMengUShare/Social/ReducedQQ (6.4.5):
+    - UMengUShare/Core
+  - UMengUShare/Social/ReducedSina (6.4.5):
+    - UMengUShare/Core
   - UMengUShare/Social/ReducedWeChat (6.4.5):
     - UMengUShare/Core
+  - UMengUShare/Social/Sina (6.4.5):
+    - UMengUShare/Core
+    - UMengUShare/Social/ReducedSina
   - UMengUShare/Social/WeChat (6.4.5):
     - UMengUShare/Core
     - UMengUShare/Social/ReducedWeChat
@@ -152,8 +162,10 @@ DEPENDENCIES:
   - ReactiveCocoa (= 2.5)
   - SDWebImage (~> 3.8)
   - UITableView+FDTemplateLayoutCell
+  - UMengUShare/Social/QQ
+  - UMengUShare/Social/Sina
   - UMengUShare/Social/WeChat
-  - YTKNetwork
+  - YTKNetwork (~> 2.0.3)
   - YYKit
 
 SPEC CHECKSUMS:
@@ -186,6 +198,6 @@ SPEC CHECKSUMS:
   YTKNetwork: c4b0c29c9d639dc050d475de69ee626d53eac598
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 81b0bd9e09f32b19c251f535bed24f32080fffd9
+PODFILE CHECKSUM: 67a1ec7ae91b08540c3c3fc0b8da6a494dda20c5
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.1
