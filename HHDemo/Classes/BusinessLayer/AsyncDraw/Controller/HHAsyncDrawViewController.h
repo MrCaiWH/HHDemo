@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  HHAsyncDrawViewController.h
 //  HHDemo
 //
 //  Created by wanhong cai on 2019/8/12.
@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+NS_ASSUME_NONNULL_BEGIN
 
-@property (strong, nonatomic) UIWindow *window;
-
+@interface HHAsyncDrawViewController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END

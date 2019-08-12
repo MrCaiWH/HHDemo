@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,18 @@
 		CBE346DA2301306D00E8D82A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBE346D92301306D00E8D82A /* Assets.xcassets */; };
 		CBE346DD2301306D00E8D82A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBE346DB2301306D00E8D82A /* LaunchScreen.storyboard */; };
 		CBE346E02301306D00E8D82A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE346DF2301306D00E8D82A /* main.m */; };
+		CBE346F22301339500E8D82A /* HHItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE346F12301339500E8D82A /* HHItem.m */; };
+		CBE346FB230133EB00E8D82A /* HHWeakObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE346F4230133EB00E8D82A /* HHWeakObject.m */; };
+		CBE346FC230133EB00E8D82A /* NSTimer+HHWeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE346F5230133EB00E8D82A /* NSTimer+HHWeakTimer.m */; };
+		CBE346FD230133EB00E8D82A /* HHAsyncLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE346F9230133EB00E8D82A /* HHAsyncLabel.m */; };
+		CBE347022301343000E8D82A /* HHTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE347012301343000E8D82A /* HHTimerViewController.m */; };
+		CBE347072301351000E8D82A /* HHAsyncDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE347062301351000E8D82A /* HHAsyncDrawViewController.m */; };
+		D4ED98F6E09A08B15BE0A045 /* Pods_HHDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5005DD3B0B8CBFA2F97AAE3F /* Pods_HHDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0274746D35CDCF4F89D7C3C3 /* Pods-HHDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHDemo.release.xcconfig"; path = "Target Support Files/Pods-HHDemo/Pods-HHDemo.release.xcconfig"; sourceTree = "<group>"; };
+		5005DD3B0B8CBFA2F97AAE3F /* Pods_HHDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HHDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBE346CD2301306D00E8D82A /* HHDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBE346D02301306D00E8D82A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CBE346D12301306D00E8D82A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +35,19 @@
 		CBE346DC2301306D00E8D82A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBE346DE2301306D00E8D82A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBE346DF2301306D00E8D82A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CBE346F02301339500E8D82A /* HHItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHItem.h; sourceTree = "<group>"; };
+		CBE346F12301339500E8D82A /* HHItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHItem.m; sourceTree = "<group>"; };
+		CBE346F4230133EB00E8D82A /* HHWeakObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHWeakObject.m; sourceTree = "<group>"; };
+		CBE346F5230133EB00E8D82A /* NSTimer+HHWeakTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+HHWeakTimer.m"; sourceTree = "<group>"; };
+		CBE346F6230133EB00E8D82A /* HHWeakObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHWeakObject.h; sourceTree = "<group>"; };
+		CBE346F7230133EB00E8D82A /* NSTimer+HHWeakTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+HHWeakTimer.h"; sourceTree = "<group>"; };
+		CBE346F9230133EB00E8D82A /* HHAsyncLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHAsyncLabel.m; sourceTree = "<group>"; };
+		CBE346FA230133EB00E8D82A /* HHAsyncLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHAsyncLabel.h; sourceTree = "<group>"; };
+		CBE347002301343000E8D82A /* HHTimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHTimerViewController.h; sourceTree = "<group>"; };
+		CBE347012301343000E8D82A /* HHTimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHTimerViewController.m; sourceTree = "<group>"; };
+		CBE347052301351000E8D82A /* HHAsyncDrawViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHAsyncDrawViewController.h; sourceTree = "<group>"; };
+		CBE347062301351000E8D82A /* HHAsyncDrawViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHAsyncDrawViewController.m; sourceTree = "<group>"; };
+		F2BD34731E2C19DFE6F10DDA /* Pods-HHDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHDemo.debug.xcconfig"; path = "Target Support Files/Pods-HHDemo/Pods-HHDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4ED98F6E09A08B15BE0A045 /* Pods_HHDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +67,8 @@
 			children = (
 				CBE346CF2301306D00E8D82A /* HHDemo */,
 				CBE346CE2301306D00E8D82A /* Products */,
+				DED9EEADE27BFAF58C0DB30B /* Pods */,
+				FFA15AD829AD3547FD8982C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +83,9 @@
 		CBE346CF2301306D00E8D82A /* HHDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CBE346E62301314500E8D82A /* Classes */,
 				CBE346D02301306D00E8D82A /* AppDelegate.h */,
 				CBE346D12301306D00E8D82A /* AppDelegate.m */,
-				CBE346D32301306D00E8D82A /* ViewController.h */,
-				CBE346D42301306D00E8D82A /* ViewController.m */,
 				CBE346D62301306D00E8D82A /* Main.storyboard */,
 				CBE346D92301306D00E8D82A /* Assets.xcassets */,
 				CBE346DB2301306D00E8D82A /* LaunchScreen.storyboard */,
@@ -71,6 +95,132 @@
 			path = HHDemo;
 			sourceTree = "<group>";
 		};
+		CBE346E62301314500E8D82A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CBE346EF2301334B00E8D82A /* BusinessLayer */,
+				CBE346EE2301333A00E8D82A /* UtilitiesLayer */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CBE346E72301322200E8D82A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CBE346E92301323300E8D82A /* Model */,
+				CBE346E82301322800E8D82A /* Controller */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CBE346E82301322800E8D82A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CBE346D32301306D00E8D82A /* ViewController.h */,
+				CBE346D42301306D00E8D82A /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CBE346E92301323300E8D82A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CBE346F02301339500E8D82A /* HHItem.h */,
+				CBE346F12301339500E8D82A /* HHItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CBE346EE2301333A00E8D82A /* UtilitiesLayer */ = {
+			isa = PBXGroup;
+			children = (
+				CBE346F8230133EB00E8D82A /* AsyncLayer */,
+				CBE346F3230133EB00E8D82A /* NSTimer */,
+			);
+			path = UtilitiesLayer;
+			sourceTree = "<group>";
+		};
+		CBE346EF2301334B00E8D82A /* BusinessLayer */ = {
+			isa = PBXGroup;
+			children = (
+				CBE34703230134F900E8D82A /* AsyncDraw */,
+				CBE346FE2301340E00E8D82A /* NSTimer */,
+				CBE346E72301322200E8D82A /* Main */,
+			);
+			path = BusinessLayer;
+			sourceTree = "<group>";
+		};
+		CBE346F3230133EB00E8D82A /* NSTimer */ = {
+			isa = PBXGroup;
+			children = (
+				CBE346F6230133EB00E8D82A /* HHWeakObject.h */,
+				CBE346F4230133EB00E8D82A /* HHWeakObject.m */,
+				CBE346F7230133EB00E8D82A /* NSTimer+HHWeakTimer.h */,
+				CBE346F5230133EB00E8D82A /* NSTimer+HHWeakTimer.m */,
+			);
+			path = NSTimer;
+			sourceTree = "<group>";
+		};
+		CBE346F8230133EB00E8D82A /* AsyncLayer */ = {
+			isa = PBXGroup;
+			children = (
+				CBE346F9230133EB00E8D82A /* HHAsyncLabel.m */,
+				CBE346FA230133EB00E8D82A /* HHAsyncLabel.h */,
+			);
+			path = AsyncLayer;
+			sourceTree = "<group>";
+		};
+		CBE346FE2301340E00E8D82A /* NSTimer */ = {
+			isa = PBXGroup;
+			children = (
+				CBE346FF2301341C00E8D82A /* Controller */,
+			);
+			path = NSTimer;
+			sourceTree = "<group>";
+		};
+		CBE346FF2301341C00E8D82A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CBE347002301343000E8D82A /* HHTimerViewController.h */,
+				CBE347012301343000E8D82A /* HHTimerViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CBE34703230134F900E8D82A /* AsyncDraw */ = {
+			isa = PBXGroup;
+			children = (
+				CBE347042301350100E8D82A /* Controller */,
+			);
+			path = AsyncDraw;
+			sourceTree = "<group>";
+		};
+		CBE347042301350100E8D82A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CBE347052301351000E8D82A /* HHAsyncDrawViewController.h */,
+				CBE347062301351000E8D82A /* HHAsyncDrawViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DED9EEADE27BFAF58C0DB30B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2BD34731E2C19DFE6F10DDA /* Pods-HHDemo.debug.xcconfig */,
+				0274746D35CDCF4F89D7C3C3 /* Pods-HHDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FFA15AD829AD3547FD8982C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5005DD3B0B8CBFA2F97AAE3F /* Pods_HHDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +228,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CBE346E32301306D00E8D82A /* Build configuration list for PBXNativeTarget "HHDemo" */;
 			buildPhases = (
+				593283FB326D170128C9C072 /* [CP] Check Pods Manifest.lock */,
 				CBE346C92301306D00E8D82A /* Sources */,
 				CBE346CA2301306D00E8D82A /* Frameworks */,
 				CBE346CB2301306D00E8D82A /* Resources */,
+				087DDC6C10AB502D1332EAB1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -97,8 +249,9 @@
 		CBE346C52301306D00E8D82A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = HH;
 				LastUpgradeCheck = 1030;
-				ORGANIZATIONNAME = koolearn;
+				ORGANIZATIONNAME = huanghuacai;
 				TargetAttributes = {
 					CBE346CC2301306D00E8D82A = {
 						CreatedOnToolsVersion = 10.3;
@@ -136,14 +289,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		087DDC6C10AB502D1332EAB1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HHDemo/Pods-HHDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HHDemo/Pods-HHDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HHDemo/Pods-HHDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		593283FB326D170128C9C072 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HHDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CBE346C92301306D00E8D82A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBE346FD230133EB00E8D82A /* HHAsyncLabel.m in Sources */,
+				CBE346FC230133EB00E8D82A /* NSTimer+HHWeakTimer.m in Sources */,
+				CBE347022301343000E8D82A /* HHTimerViewController.m in Sources */,
 				CBE346D52301306D00E8D82A /* ViewController.m in Sources */,
+				CBE346FB230133EB00E8D82A /* HHWeakObject.m in Sources */,
 				CBE346E02301306D00E8D82A /* main.m in Sources */,
 				CBE346D22301306D00E8D82A /* AppDelegate.m in Sources */,
+				CBE347072301351000E8D82A /* HHAsyncDrawViewController.m in Sources */,
+				CBE346F22301339500E8D82A /* HHItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +484,7 @@
 		};
 		CBE346E42301306D00E8D82A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2BD34731E2C19DFE6F10DDA /* Pods-HHDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +502,7 @@
 		};
 		CBE346E52301306D00E8D82A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0274746D35CDCF4F89D7C3C3 /* Pods-HHDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
