@@ -12,6 +12,7 @@
 
 #import "HHTimerViewController.h"
 #import "HHAsyncDrawViewController.h"
+#import "HHBarrierViewController.h"
 
 static NSString *const cellIdentifier =@"cellIdentifier";
 
@@ -41,6 +42,9 @@ static NSString *const cellIdentifier =@"cellIdentifier";
     
     HHItem *item2 = [[HHItem alloc] initWithTitle:@"异步绘制" targetVc:[HHAsyncDrawViewController class]];
     [self.dataArray addObject:item2];
+    
+    HHItem *item3 = [[HHItem alloc] initWithTitle:@"栅栏函数" targetVc:[HHBarrierViewController class]];
+    [self.dataArray addObject:item3];
 }
 
 #pragma mark - 数据源方法
