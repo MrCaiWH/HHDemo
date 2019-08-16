@@ -9,6 +9,7 @@
 #import "HHTimerViewController.h"
 #import "NSTimer+HHWeakTimer.h"
 #import "HHWeakObject.h"
+#import "HHWeakProxy.h"
 
 @interface HHTimerViewController ()
 @property (nonatomic, strong) NSTimer *timer;
@@ -28,6 +29,13 @@
     //方法二
     HHWeakObject *weakObj = [HHWeakObject proxyWithWeakObject:self];
     self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:weakObj selector:@selector(test) userInfo:nil repeats:YES];
+    
+    //方法三
+    self.timer = [NSTimer timerWithTimeInterval:1
+                                         target:[HHWeakProxy proxyWithTarget:self]
+                                       selector:@selector(test)
+                                       userInfo:nil
+                                        repeats:YES];
 }
 
 - (void)test {

@@ -21,6 +21,7 @@
 		CBE347072301351000E8D82A /* HHAsyncDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE347062301351000E8D82A /* HHAsyncDrawViewController.m */; };
 		CBE347332304FBB600E8D82A /* HHUserCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE347322304FBB600E8D82A /* HHUserCenter.m */; };
 		CBE347372305011700E8D82A /* HHBarrierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE347362305011700E8D82A /* HHBarrierViewController.m */; };
+		CBE3473A2306807700E8D82A /* HHWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE347392306807700E8D82A /* HHWeakProxy.m */; };
 		D4ED98F6E09A08B15BE0A045 /* Pods_HHDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5005DD3B0B8CBFA2F97AAE3F /* Pods_HHDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,8 @@
 		CBE347322304FBB600E8D82A /* HHUserCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHUserCenter.m; sourceTree = "<group>"; };
 		CBE347352305011700E8D82A /* HHBarrierViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHBarrierViewController.h; sourceTree = "<group>"; };
 		CBE347362305011700E8D82A /* HHBarrierViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHBarrierViewController.m; sourceTree = "<group>"; };
+		CBE347382306807700E8D82A /* HHWeakProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHWeakProxy.h; sourceTree = "<group>"; };
+		CBE347392306807700E8D82A /* HHWeakProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHWeakProxy.m; sourceTree = "<group>"; };
 		F2BD34731E2C19DFE6F10DDA /* Pods-HHDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHDemo.debug.xcconfig"; path = "Target Support Files/Pods-HHDemo/Pods-HHDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -165,6 +168,8 @@
 				CBE346F4230133EB00E8D82A /* HHWeakObject.m */,
 				CBE346F7230133EB00E8D82A /* NSTimer+HHWeakTimer.h */,
 				CBE346F5230133EB00E8D82A /* NSTimer+HHWeakTimer.m */,
+				CBE347382306807700E8D82A /* HHWeakProxy.h */,
+				CBE347392306807700E8D82A /* HHWeakProxy.m */,
 			);
 			path = NSTimer;
 			sourceTree = "<group>";
@@ -364,6 +369,7 @@
 			files = (
 				CBE346FD230133EB00E8D82A /* HHAsyncLabel.m in Sources */,
 				CBE346FC230133EB00E8D82A /* NSTimer+HHWeakTimer.m in Sources */,
+				CBE3473A2306807700E8D82A /* HHWeakProxy.m in Sources */,
 				CBE347372305011700E8D82A /* HHBarrierViewController.m in Sources */,
 				CBE347022301343000E8D82A /* HHTimerViewController.m in Sources */,
 				CBE346D52301306D00E8D82A /* ViewController.m in Sources */,

@@ -22,13 +22,6 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     self.userCenter = [[HHUserCenter alloc] init];
-    
-    [self.userCenter setObject:[NSNumber numberWithInt:1] forKey:@"count"];
-}
-
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    
-    [self.userCenter setObject:[NSNumber numberWithInt:1] forKey:@"count"];
 }
 
 @end

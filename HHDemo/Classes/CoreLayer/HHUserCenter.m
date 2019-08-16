@@ -39,7 +39,6 @@
     dispatch_sync(concurrent_queue, ^{
         obj = [self.userCenterDic objectForKey:key];
     });
-    
     return obj;
 }
 
@@ -48,6 +47,10 @@
     dispatch_barrier_async(concurrent_queue, ^{
         [self.userCenterDic setObject:obj forKey:key];
     });
+    
+    @synchronized (self.userCenterDic) {
+        [self.userCenterDic setObject:obj forKey:key];
+    }
 }
 
 - (void)dealloc {
