@@ -14,13 +14,10 @@
 
 @implementation HHWeakProxy
 
-- (instancetype)initWithTarget:(id)target {
-    self.target = target;
-    return self;
-}
-
 + (instancetype)proxyWithTarget:(id)target{
-    return [[self alloc] initWithTarget:target];
+    HHWeakProxy *proxy = [HHWeakProxy alloc];
+    proxy.target = target;
+    return proxy;
 }
 
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)sel{

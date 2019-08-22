@@ -24,14 +24,14 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     //方法一
-    self.timer = [NSTimer hh_scheduledWeakTimerWithTimeInterval:1.0 target:self selector:@selector(test) userInfo:nil repeats:YES];
+//    self.timer = [NSTimer hh_scheduledWeakTimerWithTimeInterval:1.0 target:self selector:@selector(test) userInfo:nil repeats:YES];
     
-    //方法二
-    HHWeakObject *weakObj = [HHWeakObject proxyWithWeakObject:self];
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:weakObj selector:@selector(test) userInfo:nil repeats:YES];
+//    //方法二
+//    HHWeakObject *weakObj = [HHWeakObject proxyWithTarget:self];
+//    self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:weakObj selector:@selector(test) userInfo:nil repeats:YES];
     
     //方法三
-    self.timer = [NSTimer timerWithTimeInterval:1
+    self.timer = [NSTimer timerWithTimeInterval:1.0
                                          target:[HHWeakProxy proxyWithTarget:self]
                                        selector:@selector(test)
                                        userInfo:nil
@@ -45,7 +45,7 @@
 - (void)dealloc {
     NSLog(@"%s",__func__);
     
-    //方法二，需要在外部手动去调用销毁timer
+    //方法二，方法三需要在外部手动去调用销毁timer
     [self.timer invalidate];
     self.timer = nil;
 }

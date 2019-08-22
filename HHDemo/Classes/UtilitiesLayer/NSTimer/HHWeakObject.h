@@ -11,9 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HHWeakObject : NSObject
-- (instancetype)initWithWeakObject:(id)obj;
-
-+ (instancetype)proxyWithWeakObject:(id)obj;
++ (instancetype)proxyWithTarget:(id)target;
 @end
 
 NS_ASSUME_NONNULL_END
